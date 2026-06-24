@@ -13598,6 +13598,15 @@ window.storage = {
         await window.storage.set(DATA_KEY, JSON.stringify({ orders: newOrders, loyalty: newLoyalty }), false);
       } catch (e) {
       }
+      // ارسال سفارش به واتساپ
+      try {
+        const itemLines = orderLineItems.map(it => it.qty + "x " + it.name + (it.price ? " (" + it.price.toLocaleString("fa-IR") + " تومان)" : " (رایگان)")).join("%0A");
+        const deliveryLine = deliveryType === "delivery" ? "%0Aآدرس: " + custAddress : "%0Aنوع: حضوری / تحویل در محل";
+        const discountLine = discountAmount > 0 ? "%0Aتخفیف: -" + discountAmount.toLocaleString("fa-IR") + " تومان" : "";
+        const scheduleLine = scheduleMode === "later" && scheduleTime ? "%0Aزمان تحویل: " + scheduleTime : "";
+        const msg = "🛎 سفارش جدید — کافه دانه%0A%0Aشماره: " + order.id + "%0Aنام: " + custName + "%0Aتلفن: " + custPhone + deliveryLine + scheduleLine + "%0A%0Aآیتم‌ها:%0A" + itemLines + discountLine + "%0A%0Aمبلغ کل: " + cartTotal.toLocaleString("fa-IR") + " تومان";
+        window.open("https://wa.me/989190130406?text=" + msg, "_blank");
+      } catch(e) {}
       if (weeklyJustCompleted) {
         showToast("\u{1F3C6} \u0686\u0627\u0644\u0634 \u0627\u06CC\u0646 \u0647\u0641\u062A\u0647 \u062A\u06A9\u0645\u06CC\u0644 \u0634\u062F! \u06CC\u0647 \u0634\u06CC\u0631\u06CC\u0646\u06CC \u0631\u0627\u06CC\u06AF\u0627\u0646 \u062F\u0627\u0631\u06CC");
       } else if (gotNewReward) {
