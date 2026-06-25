@@ -13187,33 +13187,119 @@ window.storage = {
   var import_react = __toESM(require_react());
   var import_lucide_react = __toESM(require_lucide_shim());
   var import_jsx_runtime = __toESM(require_jsx_runtime());
+  window.__LANG = "fa";
+  window.t = function(key) { var tr = window.__TR; var lang = window.__LANG || "fa"; return (tr && tr[lang] && tr[lang][key]) || (tr && tr["fa"] && tr["fa"][key]) || key; };
+  window.__TR = {
+    fa: {
+      welcomeTitle: "به کافه دانه خوش اومدی",
+      welcomeSub: "برشته‌کاری تازه، هر روز. سفارش بده، امتیاز جمع کن.",
+      welcomeBtn: "بزن بریم", loginTitle: "ورود به حساب",
+      loginSub: "برای پیگیری سفارش‌ها و باشگاه مشتریان، اطلاعاتت رو وارد کن",
+      loginBtn: "ورود", guestBtn: "ادامه به‌عنوان مهمان",
+      menu: "منو", cart: "سبد", loyalty: "باشگاه", reserve: "رزرو", orders: "سفارش‌ها", dashboard: "مدیر",
+      brandName: "کافه دانه", brandTag: "برشته‌کاری تازه، هر روز", welcomeUser: "خوش آمدید، ",
+      search: "جستجو در منو...", sort: "مرتب‌سازی", favorites: "علاقه‌مندی‌ها",
+      sortDefault: "پیش‌فرض", sortAsc: "ارزان‌ترین", sortDesc: "گران‌ترین",
+      catCoffee: "قهوه", catTea: "چای و دمنوش", catCake: "کیک و شیرینی", catCold: "نوشیدنی سرد",
+      popular: "پرطرفدار", toman: "تومان", pairWith: "خوب میشه با",
+      cartEmpty: "سبدت خالیه", goToMenu: "رفتن به منو",
+      checkout: "ادامه و ثبت سفارش", subtotal: "جمع جزء", total: "مبلغ قابل پرداخت", free: "رایگان",
+      couponPlaceholder: "کد تخفیف...", couponApply: "اعمال",
+      payOnline: "💳 پرداخت آنلاین", orderWithoutPay: "📲 ثبت بدون پرداخت آنلاین",
+      pickup: "حضوری", delivery: "ارسال",
+      deliveryAddr: "آدرس تحویل", yourName: "نام شما", phone: "شماره تماس",
+      orderNote: "یادداشت سفارش (اختیاری)", now: "همین الان", scheduled: "زمان‌بندی‌شده",
+      deliveryTime: "ساعت تحویل", finalCalc: "مبلغ نهایی توسط سرور محاسبه می‌شود",
+      redeemGift: "انتخاب جایزه", giftLabel: "جایزه",
+      closed: "کافه الان بسته است 😪 · ساعات کاری: ۸ صبح تا ۱۰ شب",
+      dailySpecial: "پیشنهاد روز", bundleTitle: "قهوه + کروسان — صبحانه کامل",
+      bundleTag: "پکیج ویژه", bundleDisc: "۱۵٪ تخفیف",
+      adminLock: "داشبورد مدیریت", adminLockSub: "ابتدا از پنل مدیریت وارد شوید",
+      adminLockBtn: "ورود به پنل مدیریت", dashTitle: "📊 داشبورد فروش",
+      loyaltyTitle: "باشگاه مشتریان دانه", currentLevel: "سطح فعلی",
+      pointsLabel: "امتیاز جمع‌شده", pointsToNext: "امتیاز تا سطح بعدی",
+      stampsRule: "۸ دانه = ۱ قهوه رایگان", yourReward: "جایزه‌ی شما",
+      claimChallenge: "دریافت جایزه‌ی چالش", weeklyChallenge: "۲ تا چای بخر، یه شیرینی رایگان بگیر",
+      referral: "دعوت دوستان", yourCode: "کد دعوت شما",
+      orderHistory: "تاریخچه سفارش‌ها", reorder: "سفارش مجدد",
+      preparing: "در حال آماده‌سازی",
+      tableReserve: "رزرو میز", guestCount: "تعداد نفر", occasion: "نوع مناسبت",
+      specialReq: "درخواست ویژه", confirmReserve: "ثبت رزرو", reserveSub: "کافه دانه رو برای هر مناسبتی رزرو کنید",
+      reserveSuccess: "درخواست رزرو ثبت شد!",
+      surpriseTitle: "هدیه سورپرایز", friendName: "نام دوستت", randomSend: "انتخاب تصادفی و ارسال هدیه",
+      surpriseSub: "با اسکن منو، یه شیرینی سورپرایز انتخاب کنید", giftSent: "هدیه فرستاده شد!",
+      priceAdmin: "مدیریت قیمت‌ها", savePrices: "ذخیره تغییرات",
+      ordersEmpty: "سفارشی ثبت نشده", pointsToNextLevel: "امتیاز تا سطح بعدی"
+    },
+    en: {
+      welcomeTitle: "Welcome to Cafe Daneh",
+      welcomeSub: "Fresh roast, every day. Order and earn points for a free coffee.",
+      welcomeBtn: "Let's go", loginTitle: "Sign In",
+      loginSub: "Track orders and use loyalty club benefits",
+      loginBtn: "Sign In", guestBtn: "Continue as Guest",
+      menu: "Menu", cart: "Cart", loyalty: "Club", reserve: "Reserve", orders: "Orders", dashboard: "Admin",
+      brandName: "Cafe Daneh", brandTag: "Fresh roast, every day", welcomeUser: "Welcome, ",
+      search: "Search menu...", sort: "Sort", favorites: "Favorites",
+      sortDefault: "Default", sortAsc: "Cheapest", sortDesc: "Priciest",
+      catCoffee: "Coffee", catTea: "Tea", catCake: "Cakes", catCold: "Cold Drinks",
+      popular: "Popular", toman: "T", pairWith: "Pairs with",
+      cartEmpty: "Your cart is empty", goToMenu: "Go to Menu",
+      checkout: "Checkout", subtotal: "Subtotal", total: "Total", free: "Free",
+      couponPlaceholder: "Discount code...", couponApply: "Apply",
+      payOnline: "💳 Pay Online", orderWithoutPay: "📲 Order without online payment",
+      pickup: "Pickup", delivery: "Delivery",
+      deliveryAddr: "Delivery address", yourName: "Your name", phone: "Phone number",
+      orderNote: "Order note (optional)", now: "Now", scheduled: "Scheduled",
+      deliveryTime: "Delivery time", finalCalc: "Final amount calculated by server",
+      redeemGift: "Choose Gift", giftLabel: "Gift",
+      closed: "Cafe is closed 😪 · Hours: 8AM - 10PM",
+      dailySpecial: "Daily Special", bundleTitle: "Coffee + Croissant — Full Breakfast",
+      bundleTag: "Special Bundle", bundleDisc: "15% OFF",
+      adminLock: "Admin Dashboard", adminLockSub: "Please sign in to the admin panel first",
+      adminLockBtn: "Go to Admin Panel", dashTitle: "📊 Sales Dashboard",
+      loyaltyTitle: "Daneh Loyalty Club", currentLevel: "Current level",
+      pointsLabel: "Points collected", pointsToNext: "Points to next level",
+      stampsRule: "8 stamps = 1 free coffee", yourReward: "Your reward",
+      claimChallenge: "Claim Challenge Reward", weeklyChallenge: "Buy 2 teas, get a free pastry",
+      referral: "Invite friends", yourCode: "Your invite code",
+      orderHistory: "Order history", reorder: "Reorder",
+      preparing: "Preparing your order",
+      tableReserve: "Table reservation", guestCount: "Number of guests", occasion: "Occasion type",
+      specialReq: "Special request", confirmReserve: "Confirm reservation", reserveSub: "Reserve Cafe Daneh for any occasion",
+      reserveSuccess: "Reservation submitted!",
+      surpriseTitle: "Surprise Gift", friendName: "Friend name", randomSend: "Random pick & send gift",
+      surpriseSub: "Pick a random treat from the menu as a gift", giftSent: "Gift sent!",
+      priceAdmin: "Price management", savePrices: "Save changes",
+      ordersEmpty: "No orders yet", pointsToNextLevel: "Points to next level"
+    }
+  }
   var MENU = [
-    { id: "esp", cat: "coffee", name: "\u0627\u0633\u067E\u0631\u0633\u0648", desc: "\u062A\u06A9\u200C\u0634\u0627\u062A \u0631\u06CC\u0632 \u0648 \u063A\u0644\u06CC\u0638\u060C \u062E\u0644\u0627\u0635\u0647\u200C\u06CC \u0642\u0647\u0648\u0647", price: 45e3, pair: "cro", popular: false },
-    { id: "ame", cat: "coffee", name: "\u0622\u0645\u0631\u06CC\u06A9\u0627\u0646\u0648", desc: "\u0627\u0633\u067E\u0631\u0633\u0648 \u0631\u0642\u06CC\u0642\u200C\u0634\u062F\u0647 \u0628\u0627 \u0622\u0628 \u062F\u0627\u063A", price: 5e4, pair: "bro", popular: false },
-    { id: "lat", cat: "coffee", name: "\u0644\u0627\u062A\u0647", desc: "\u0627\u0633\u067E\u0631\u0633\u0648 \u0628\u0627 \u0634\u06CC\u0631 \u0628\u062E\u0627\u0631\u062F\u06CC\u062F\u0647 \u0648 \u06A9\u0641 \u0646\u0631\u0645", price: 65e3, pair: "chz", popular: true },
-    { id: "cap", cat: "coffee", name: "\u06A9\u0627\u067E\u0648\u0686\u06CC\u0646\u0648", desc: "\u06CC\u06A9\u200C\u0633\u0648\u0645 \u0627\u0633\u067E\u0631\u0633\u0648\u060C \u06CC\u06A9\u200C\u0633\u0648\u0645 \u0634\u06CC\u0631\u060C \u06CC\u06A9\u200C\u0633\u0648\u0645 \u06A9\u0641", price: 65e3, pair: "cro", popular: false },
-    { id: "flw", cat: "coffee", name: "\u0641\u0644\u062A\u200C\u0648\u0627\u06CC\u062A", desc: "\u062F\u0648\u0628\u0644 \u0631\u06CC\u0633\u062A\u0631\u062A\u0648 \u0628\u0627 \u06A9\u0641 \u0627\u0628\u0631\u06CC\u0634\u0645\u06CC", price: 7e4, pair: "chz", popular: false },
-    { id: "trk", cat: "coffee", name: "\u0642\u0647\u0648\u0647\u200C\u062A\u0631\u06A9", desc: "\u062F\u0645\u200C\u06A9\u0631\u062F\u0647 \u062F\u0631 \u062C\u0632\u0648\u0647\u200C\u06CC \u0645\u0633\u06CC\u060C \u062A\u0647\u200C\u0646\u0634\u06CC\u0646", price: 4e4, pair: "bro", popular: false },
-    { id: "moc", cat: "coffee", name: "\u0645\u0648\u06A9\u0627", desc: "\u0627\u0633\u067E\u0631\u0633\u0648\u060C \u0634\u06A9\u0644\u0627\u062A \u062A\u0644\u062E \u0648 \u0634\u06CC\u0631 \u0628\u062E\u0627\u0631\u062F\u06CC\u062F\u0647", price: 68e3, pair: "bro", popular: false },
-    { id: "mas", cat: "tea", name: "\u0686\u0627\u06CC \u0645\u0627\u0633\u0627\u0644\u0627", desc: "\u062F\u0627\u0631\u0686\u06CC\u0646\u060C \u0647\u0644 \u0648 \u0632\u0646\u062C\u0628\u06CC\u0644 \u0628\u0627 \u0634\u06CC\u0631", price: 48e3, pair: "cro", popular: false },
-    { id: "bab", cat: "tea", name: "\u062F\u0645\u0646\u0648\u0634 \u0628\u0627\u0628\u0648\u0646\u0647 \u0648 \u0646\u0639\u0646\u0627", desc: "\u0622\u0631\u0627\u0645\u0634\u200C\u0628\u062E\u0634\u060C \u0628\u062F\u0648\u0646 \u06A9\u0627\u0641\u0626\u06CC\u0646", price: 38e3, pair: "chz", popular: false },
-    { id: "mch", cat: "tea", name: "\u0645\u0627\u0686\u0627 \u0644\u0627\u062A\u0647", desc: "\u0686\u0627\u06CC \u0633\u0628\u0632 \u0698\u0627\u067E\u0646\u06CC \u0628\u0627 \u0634\u06CC\u0631 \u06AF\u0631\u0645", price: 62e3, pair: "bro", popular: false },
-    { id: "sia", cat: "tea", name: "\u0686\u0627\u06CC \u0633\u06CC\u0627\u0647 \u0627\u06CC\u0631\u0627\u0646\u06CC", desc: "\u062F\u0645\u200C\u06A9\u0631\u062F\u0647\u200C\u06CC \u0633\u0646\u062A\u06CC\u060C \u062A\u0627\u0632\u0647 \u0648 \u067E\u0631\u0631\u0646\u06AF", price: 32e3, pair: "chz", popular: false },
-    { id: "chz", cat: "cake", name: "\u0686\u06CC\u0632\u06A9\u06CC\u06A9 \u0646\u06CC\u0648\u06CC\u0648\u0631\u06A9\u06CC", desc: "\u0628\u0627\u0641\u062A \u06A9\u0631\u0645\u06CC \u0631\u0648\u06CC \u062E\u0645\u06CC\u0631 \u0628\u06CC\u0633\u06A9\u0648\u06CC\u062A\u06CC", price: 78e3, pair: "lat", popular: true },
-    { id: "cro", cat: "cake", name: "\u06A9\u0631\u0648\u0633\u0627\u0646 \u06A9\u0631\u0647\u200C\u0627\u06CC", desc: "\u062A\u0627\u0632\u0647 \u0627\u0632 \u0641\u0631\u060C \u0644\u0627\u06CC\u0647\u200C\u0644\u0627\u06CC\u0647 \u0648 \u062A\u0631\u062F", price: 55e3, pair: "esp", popular: false },
-    { id: "bro", cat: "cake", name: "\u0628\u0631\u0627\u0648\u0646\u06CC \u0634\u06A9\u0644\u0627\u062A\u06CC", desc: "\u0645\u063A\u0632\u062F\u0627\u0631 \u0648 \u0622\u0628\u200C\u062F\u0627\u0631\u060C \u0628\u0627 \u06AF\u0631\u062F\u0648", price: 5e4, pair: "ame", popular: false },
-    { id: "cok", cat: "cake", name: "\u06A9\u0648\u06A9\u06CC \u0634\u06A9\u0644\u0627\u062A\u06CC", desc: "\u0644\u0628\u0647\u200C\u062A\u0631\u062F \u0648 \u0648\u0633\u0637 \u0646\u0631\u0645\u060C \u0628\u0627 \u062A\u06A9\u0647\u200C\u0647\u0627\u06CC \u0634\u06A9\u0644\u0627\u062A", price: 42e3, pair: "lat", popular: false },
-    { id: "ila", cat: "cold", name: "\u0622\u06CC\u0633\u200C\u0644\u0627\u062A\u0647", desc: "\u0627\u0633\u067E\u0631\u0633\u0648 \u0633\u0631\u062F \u0628\u0627 \u0634\u06CC\u0631 \u0648 \u06CC\u062E", price: 68e3, pair: "chz", popular: true },
-    { id: "iam", cat: "cold", name: "\u0622\u06CC\u0633\u200C\u0622\u0645\u0631\u06CC\u06A9\u0627\u0646\u0648", desc: "\u0642\u0647\u0648\u0647\u200C\u06CC \u0633\u0631\u062F \u0648 \u0631\u0641\u0631\u0634\u06CC\u0646\u06AF", price: 55e3, pair: "bro", popular: false },
-    { id: "lem", cat: "cold", name: "\u0644\u06CC\u0645\u0648\u0646\u0627\u062F \u0646\u0639\u0646\u0627", desc: "\u0644\u06CC\u0645\u0648\u06CC \u062A\u0627\u0632\u0647\u060C \u0646\u0639\u0646\u0627 \u0648 \u06A9\u0645\u06CC \u0622\u0628\u0644\u06CC\u0645\u0648", price: 48e3, pair: "cro", popular: false },
-    { id: "smo", cat: "cold", name: "\u0627\u0633\u0645\u0648\u062A\u06CC \u062A\u0648\u062A\u200C\u0641\u0631\u0646\u06AF\u06CC", desc: "\u062A\u0648\u062A\u200C\u0641\u0631\u0646\u06AF\u06CC\u060C \u0645\u0648\u0632 \u0648 \u0645\u0627\u0633\u062A", price: 62e3, pair: "chz", popular: false },
-    { id: "cdb", cat: "cold", name: "\u06A9\u0644\u062F\u0628\u0631\u0648", desc: "\u062F\u0645 \u0633\u0631\u062F \u06F1\u06F8 \u0633\u0627\u0639\u062A\u0647\u060C \u0645\u0644\u0627\u06CC\u0645 \u0648 \u06A9\u0645\u200C\u0627\u0633\u06CC\u062F\u06CC", price: 72e3, pair: "cro", popular: true }
+    { id: "esp", cat: "coffee", name: "\u0627\u0633\u067E\u0631\u0633\u0648", nameEn: "Espresso", desc: "\u062A\u06A9\u200C\u0634\u0627\u062A \u0631\u06CC\u0632 \u0648 \u063A\u0644\u06CC\u0638\u060C \u062E\u0644\u0627\u0635\u0647\u200C\u06CC \u0642\u0647\u0648\u0647", descEn: "Rich single shot, the essence of coffee", price: 45e3, pair: "cro", popular: false },
+    { id: "ame", cat: "coffee", name: "\u0622\u0645\u0631\u06CC\u06A9\u0627\u0646\u0648", nameEn: "Americano", desc: "\u0627\u0633\u067E\u0631\u0633\u0648 \u0631\u0642\u06CC\u0642\u200C\u0634\u062F\u0647 \u0628\u0627 \u0622\u0628 \u062F\u0627\u063A", descEn: "Espresso diluted with hot water", price: 5e4, pair: "bro", popular: false },
+    { id: "lat", cat: "coffee", name: "\u0644\u0627\u062A\u0647", nameEn: "Latte", desc: "\u0627\u0633\u067E\u0631\u0633\u0648 \u0628\u0627 \u0634\u06CC\u0631 \u0628\u062E\u0627\u0631\u062F\u06CC\u062F\u0647 \u0648 \u06A9\u0641 \u0646\u0631\u0645", descEn: "Espresso with steamed milk and soft foam", price: 65e3, pair: "chz", popular: true },
+    { id: "cap", cat: "coffee", name: "\u06A9\u0627\u067E\u0648\u0686\u06CC\u0646\u0648", nameEn: "Cappuccino", desc: "\u06CC\u06A9\u200C\u0633\u0648\u0645 \u0627\u0633\u067E\u0631\u0633\u0648\u060C \u06CC\u06A9\u200C\u0633\u0648\u0645 \u0634\u06CC\u0631\u060C \u06CC\u06A9\u200C\u0633\u0648\u0645 \u06A9\u0641", descEn: "1/3 espresso, 1/3 milk, 1/3 foam", price: 65e3, pair: "cro", popular: false },
+    { id: "flw", cat: "coffee", name: "\u0641\u0644\u062A\u200C\u0648\u0627\u06CC\u062A", nameEn: "Flat White", desc: "\u062F\u0648\u0628\u0644 \u0631\u06CC\u0633\u062A\u0631\u062A\u0648 \u0628\u0627 \u06A9\u0641 \u0627\u0628\u0631\u06CC\u0634\u0645\u06CC", descEn: "Double ristretto with silky microfoam", price: 7e4, pair: "chz", popular: false },
+    { id: "trk", cat: "coffee", name: "\u0642\u0647\u0648\u0647\u200C\u062A\u0631\u06A9", nameEn: "Turkish Coffee", desc: "\u062F\u0645\u200C\u06A9\u0631\u062F\u0647 \u062F\u0631 \u062C\u0632\u0648\u0647\u200C\u06CC \u0645\u0633\u06CC\u060C \u062A\u0647\u200C\u0646\u0634\u06CC\u0646", descEn: "Brewed in copper pot, with sediment", price: 4e4, pair: "bro", popular: false },
+    { id: "moc", cat: "coffee", name: "\u0645\u0648\u06A9\u0627", nameEn: "Mocha", desc: "\u0627\u0633\u067E\u0631\u0633\u0648\u060C \u0634\u06A9\u0644\u0627\u062A \u062A\u0644\u062E \u0648 \u0634\u06CC\u0631 \u0628\u062E\u0627\u0631\u062F\u06CC\u062F\u0647", descEn: "Espresso, dark chocolate and steamed milk", price: 68e3, pair: "bro", popular: false },
+    { id: "mas", cat: "tea", name: "\u0686\u0627\u06CC \u0645\u0627\u0633\u0627\u0644\u0627", nameEn: "Masala Tea", desc: "\u062F\u0627\u0631\u0686\u06CC\u0646\u060C \u0647\u0644 \u0648 \u0632\u0646\u062C\u0628\u06CC\u0644 \u0628\u0627 \u0634\u06CC\u0631", descEn: "Cinnamon, cardamom and ginger with milk", price: 48e3, pair: "cro", popular: false },
+    { id: "bab", cat: "tea", name: "\u062F\u0645\u0646\u0648\u0634 \u0628\u0627\u0628\u0648\u0646\u0647 \u0648 \u0646\u0639\u0646\u0627", nameEn: "Chamomile Mint", desc: "\u0622\u0631\u0627\u0645\u0634\u200C\u0628\u062E\u0634\u060C \u0628\u062F\u0648\u0646 \u06A9\u0627\u0641\u0626\u06CC\u0646", descEn: "Calming blend, caffeine-free", price: 38e3, pair: "chz", popular: false },
+    { id: "mch", cat: "tea", name: "\u0645\u0627\u0686\u0627 \u0644\u0627\u062A\u0647", nameEn: "Matcha Latte", desc: "\u0686\u0627\u06CC \u0633\u0628\u0632 \u0698\u0627\u067E\u0646\u06CC \u0628\u0627 \u0634\u06CC\u0631 \u06AF\u0631\u0645", descEn: "Japanese green tea with warm milk", price: 62e3, pair: "bro", popular: false },
+    { id: "sia", cat: "tea", name: "\u0686\u0627\u06CC \u0633\u06CC\u0627\u0647 \u0627\u06CC\u0631\u0627\u0646\u06CC", nameEn: "Iranian Black Tea", desc: "\u062F\u0645\u200C\u06A9\u0631\u062F\u0647\u200C\u06CC \u0633\u0646\u062A\u06CC\u060C \u062A\u0627\u0632\u0647 \u0648 \u067E\u0631\u0631\u0646\u06AF", descEn: "Traditional brew, fresh and strong", price: 32e3, pair: "chz", popular: false },
+    { id: "chz", cat: "cake", name: "\u0686\u06CC\u0632\u06A9\u06CC\u06A9 \u0646\u06CC\u0648\u06CC\u0648\u0631\u06A9\u06CC", nameEn: "NY Cheesecake", desc: "\u0628\u0627\u0641\u062A \u06A9\u0631\u0645\u06CC \u0631\u0648\u06CC \u062E\u0645\u06CC\u0631 \u0628\u06CC\u0633\u06A9\u0648\u06CC\u062A\u06CC", descEn: "Creamy texture on a biscuit crust", price: 78e3, pair: "lat", popular: true },
+    { id: "cro", cat: "cake", name: "\u06A9\u0631\u0648\u0633\u0627\u0646 \u06A9\u0631\u0647\u200C\u0627\u06CC", nameEn: "Butter Croissant", desc: "\u062A\u0627\u0632\u0647 \u0627\u0632 \u0641\u0631\u060C \u0644\u0627\u06CC\u0647\u200C\u0644\u0627\u06CC\u0647 \u0648 \u062A\u0631\u062F", descEn: "Fresh from the oven, flaky and crisp", price: 55e3, pair: "esp", popular: false },
+    { id: "bro", cat: "cake", name: "\u0628\u0631\u0627\u0648\u0646\u06CC \u0634\u06A9\u0644\u0627\u062A\u06CC", nameEn: "Chocolate Brownie", desc: "\u0645\u063A\u0632\u062F\u0627\u0631 \u0648 \u0622\u0628\u200C\u062F\u0627\u0631\u060C \u0628\u0627 \u06AF\u0631\u062F\u0648", descEn: "Fudgy and moist, with walnuts", price: 5e4, pair: "ame", popular: false },
+    { id: "cok", cat: "cake", name: "\u06A9\u0648\u06A9\u06CC \u0634\u06A9\u0644\u0627\u062A\u06CC", nameEn: "Chocolate Cookie", desc: "\u0644\u0628\u0647\u200C\u062A\u0631\u062F \u0648 \u0648\u0633\u0637 \u0646\u0631\u0645\u060C \u0628\u0627 \u062A\u06A9\u0647\u200C\u0647\u0627\u06CC \u0634\u06A9\u0644\u0627\u062A", descEn: "Crispy edge and soft center, chocolate chips", price: 42e3, pair: "lat", popular: false },
+    { id: "ila", cat: "cold", name: "\u0622\u06CC\u0633\u200C\u0644\u0627\u062A\u0647", nameEn: "Iced Latte", desc: "\u0627\u0633\u067E\u0631\u0633\u0648 \u0633\u0631\u062F \u0628\u0627 \u0634\u06CC\u0631 \u0648 \u06CC\u062E", descEn: "Cold espresso with milk and ice", price: 68e3, pair: "chz", popular: true },
+    { id: "iam", cat: "cold", name: "\u0622\u06CC\u0633\u200C\u0622\u0645\u0631\u06CC\u06A9\u0627\u0646\u0648", nameEn: "Iced Americano", desc: "\u0642\u0647\u0648\u0647\u200C\u06CC \u0633\u0631\u062F \u0648 \u0631\u0641\u0631\u0634\u06CC\u0646\u06AF", descEn: "Cold and refreshing coffee", price: 55e3, pair: "bro", popular: false },
+    { id: "lem", cat: "cold", name: "\u0644\u06CC\u0645\u0648\u0646\u0627\u062F \u0646\u0639\u0646\u0627", nameEn: "Mint Lemonade", desc: "\u0644\u06CC\u0645\u0648\u06CC \u062A\u0627\u0632\u0647\u060C \u0646\u0639\u0646\u0627 \u0648 \u06A9\u0645\u06CC \u0622\u0628\u0644\u06CC\u0645\u0648", descEn: "Fresh lemon, mint and a dash of lime", price: 48e3, pair: "cro", popular: false },
+    { id: "smo", cat: "cold", name: "\u0627\u0633\u0645\u0648\u062A\u06CC \u062A\u0648\u062A\u200C\u0641\u0631\u0646\u06AF\u06CC", nameEn: "Strawberry Smoothie", desc: "\u062A\u0648\u062A\u200C\u0641\u0631\u0646\u06AF\u06CC\u060C \u0645\u0648\u0632 \u0648 \u0645\u0627\u0633\u062A", descEn: "Strawberry, banana and yogurt", price: 62e3, pair: "chz", popular: false },
+    { id: "cdb", cat: "cold", name: "\u06A9\u0644\u062F\u0628\u0631\u0648", nameEn: "Cold Brew", desc: "\u062F\u0645 \u0633\u0631\u062F \u06F1\u06F8 \u0633\u0627\u0639\u062A\u0647\u060C \u0645\u0644\u0627\u06CC\u0645 \u0648 \u06A9\u0645\u200C\u0627\u0633\u06CC\u062F\u06CC", descEn: "18-hour cold steep, smooth and low-acid", price: 72e3, pair: "cro", popular: true }
   ];
   var CATEGORIES = [
-    { id: "coffee", label: "\u0642\u0647\u0648\u0647", icon: import_lucide_react.Coffee, emoji: "\u2615" },
-    { id: "tea", label: "\u0686\u0627\u06CC \u0648 \u062F\u0645\u0646\u0648\u0634", icon: import_lucide_react.Leaf, emoji: "\uD83C\uDF3F" },
-    { id: "cake", label: "\u06A9\u06CC\u06A9 \u0648 \u0634\u06CC\u0631\u06CC\u0646\u06CC", icon: import_lucide_react.Sparkles, emoji: "\uD83C\uDF70" },
-    { id: "cold", label: "\u0646\u0648\u0634\u06CC\u062F\u0646\u06CC \u0633\u0631\u062F", icon: import_lucide_react.Snowflake, emoji: "\u2744\uFE0F" }
+    { id: "coffee", labelFa: "\u0642\u0647\u0648\u0647", labelEn: "Coffee", emoji: "\u2615" },
+    { id: "tea", labelFa: "\u0686\u0627\u06CC \u0648 \u062F\u0645\u0646\u0648\u0634", labelEn: "Tea", emoji: "\uD83C\uDF3F" },
+    { id: "cake", labelFa: "\u06A9\u06CC\u06A9 \u0648 \u0634\u06CC\u0631\u06CC\u0646\u06CC", labelEn: "Cakes", emoji: "\uD83C\uDF70" },
+    { id: "cold", labelFa: "\u0646\u0648\u0634\u06CC\u062F\u0646\u06CC \u0633\u0631\u062F", labelEn: "Cold Drinks", emoji: "\u2744\uFE0F" }
   ];
   var CAT_STYLE = {
     coffee: { grad: "linear-gradient(135deg,#6F4E37,#3B2A1E)", fg: "#F3E9DD" },
@@ -13658,10 +13744,7 @@ window.storage = {
     const h = new Date().getHours();
     return h >= WORKING_HOURS.open && h < WORKING_HOURS.close;
   }
-  const TR = {
-    fa: { menu: "\u0645\u0646\u0648", cart: "\u0633\u0628\u062F", loyalty: "\u0628\u0627\u0634\u06AF\u0627\u0647", reserve: "\u0631\u0632\u0631\u0648", orders: "\u0633\u0641\u0627\u0631\u0634\u200C\u0647\u0627", dashboard: "\u0645\u062F\u06CC\u0631", addToCart: "\u0627\u0641\u0632\u0648\u062F\u0646", order: "\u062B\u0628\u062A \u0633\u0641\u0627\u0631\u0634", closed: "\u06A9\u0627\u0641\u0647 \u0627\u0644\u0627\u0646 \u0628\u0633\u062A\u0647 \u0627\u0633\u062A \u{1F62A}" },
-    en: { menu: "Menu", cart: "Cart", loyalty: "Club", reserve: "Reserve", orders: "Orders", dashboard: "Admin", addToCart: "Add", order: "Place Order", closed: "Cafe is closed now \uD83D\uDE2A" }
-  };
+
   function applyCoupon() {
     const code = couponCode.trim().toUpperCase();
     if (COUPONS[code]) {
@@ -13851,22 +13934,22 @@ window.storage = {
     const canSubmit = custName.trim() && custPhone.trim() && (deliveryType === "pickup" || custAddress.trim() && subtotal >= MIN_DELIVERY_AMOUNT) && (scheduleMode === "now" || scheduleTime);
     const canLogin = loginName.trim() && loginPhone.trim();
     const tabs = [
-      { id: "menu", label: "\u0645\u0646\u0648", icon: import_lucide_react.Coffee, emoji: "\u2615" },
-      { id: "cart", label: "\u0633\u0628\u062F", icon: import_lucide_react.ShoppingBag, badge: cartCount, emoji: "\uD83D\uDED2" },
-      { id: "loyalty", label: "\u0628\u0627\u0634\u06AF\u0627\u0647", icon: import_lucide_react.Award, emoji: "\uD83C\uDFC6" },
-      { id: "reserve", label: "\u0631\u0632\u0631\u0648", icon: import_lucide_react.Calendar, emoji: "\uD83D\uDCC5" },
-      { id: "orders", label: "\u0633\u0641\u0627\u0631\u0634\u200C\u0647\u0627", icon: import_lucide_react.ClipboardList, emoji: "\uD83D\uDCCB" },
-      { id: "dashboard", label: "\u0645\u062F\u06CC\u0631", icon: import_lucide_react.ClipboardList, emoji: "\uD83D\uDCCA" }
+      { id: "menu", label: window.t("menu"), emoji: "\u2615" },
+      { id: "cart", label: window.t("cart"), badge: cartCount, emoji: "\uD83D\uDED2" },
+      { id: "loyalty", label: window.t("loyalty"), emoji: "\uD83C\uDFC6" },
+      { id: "reserve", label: window.t("reserve"), emoji: "\uD83D\uDCC5" },
+      { id: "orders", label: window.t("orders"), emoji: "\uD83D\uDCCB" },
+      { id: "dashboard", label: window.t("dashboard"), emoji: "\uD83D\uDCCA" }
     ];
     const ONBOARD_STEPS = [
-      { icon: import_lucide_react.Award, title: "\u0628\u0627\u0634\u06AF\u0627\u0647 \u0645\u0634\u062A\u0631\u06CC\u0627\u0646 \u062F\u0627\u0646\u0647", desc: "\u0647\u0631 \u0633\u0641\u0627\u0631\u0634 \u0628\u0647\u062A \u0627\u0645\u062A\u06CC\u0627\u0632 \u0648 \u062F\u0648\u0646\u0647 \u0645\u06CC\u200C\u062F\u0647. \u0628\u0627 \u06F8 \u062F\u0648\u0646\u0647 \u0642\u0647\u0648\u0647\u060C \u06CC\u0647 \u0642\u0647\u0648\u0647\u200C\u06CC \u0631\u0627\u06CC\u06AF\u0627\u0646 \u0645\u06CC\u200C\u06AF\u06CC\u0631\u06CC!" },
+      { icon: import_lucide_react.Award, title: window.t("loyaltyTitle"), desc: "\u0647\u0631 \u0633\u0641\u0627\u0631\u0634 \u0628\u0647\u062A \u0627\u0645\u062A\u06CC\u0627\u0632 \u0648 \u062F\u0648\u0646\u0647 \u0645\u06CC\u200C\u062F\u0647. \u0628\u0627 \u06F8 \u062F\u0648\u0646\u0647 \u0642\u0647\u0648\u0647\u060C \u06CC\u0647 \u0642\u0647\u0648\u0647\u200C\u06CC \u0631\u0627\u06CC\u06AF\u0627\u0646 \u0645\u06CC\u200C\u06AF\u06CC\u0631\u06CC!" },
       { icon: import_lucide_react.Gift, title: "\u062C\u0627\u06CC\u0632\u0647\u200C\u0647\u0627\u06CC \u0642\u0627\u0628\u0644\u200C\u0627\u0646\u062A\u062E\u0627\u0628", desc: "\u0648\u0642\u062A\u06CC \u062C\u0627\u06CC\u0632\u0647 \u062F\u0627\u0631\u06CC\u060C \u062E\u0648\u062F\u062A \u0627\u0632 \u0644\u06CC\u0633\u062A \u0627\u0646\u062A\u062E\u0627\u0628 \u06A9\u0646 \u06CC\u0627 \u0628\u0630\u0627\u0631 \u0646\u0631\u0645\u200C\u0627\u0641\u0632\u0627\u0631 \u0628\u0631\u0627\u062A \u0627\u0646\u062A\u062E\u0627\u0628 \u06A9\u0646\u0647" },
       { icon: import_lucide_react.Percent, title: "\u062A\u062E\u0641\u06CC\u0641 \u06AF\u0631\u0648\u0647\u06CC \u0648 \u0686\u0627\u0644\u0634 \u0647\u0641\u062A\u06AF\u06CC", desc: "\u0628\u0627\u0644\u0627\u06CC \u06F5 \u0622\u06CC\u062A\u0645 \u062A\u062E\u0641\u06CC\u0641 \u062E\u0648\u062F\u06A9\u0627\u0631 \u0645\u06CC\u200C\u06AF\u06CC\u0631\u06CC\u060C \u0648 \u0628\u0627 \u062E\u0631\u06CC\u062F \u0686\u0627\u06CC \u0647\u0641\u062A\u06AF\u06CC\u060C \u0634\u06CC\u0631\u06CC\u0646\u06CC \u0631\u0627\u06CC\u06AF\u0627\u0646 \u062C\u0627\u06CC\u0632\u0647 \u0645\u06CC\u200C\u06AF\u06CC\u0631\u06CC" }
     ];
     let visibleItems = searchQuery.trim() ? MENU.filter((m) => m.name.includes(searchQuery) || m.desc.includes(searchQuery)) : showFavoritesOnly ? MENU.filter((m) => favorites[m.id]) : MENU.filter((m) => m.cat === activeCat);
     if (sortMode === "priceAsc") visibleItems = [...visibleItems].sort((a, b) => priceOf(a) - priceOf(b));
     else if (sortMode === "priceDesc") visibleItems = [...visibleItems].sort((a, b) => priceOf(b) - priceOf(a));
-    return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { dir: "rtl", lang: "fa", className: "daneh-root", "data-theme": theme, children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { dir: lang === "fa" ? "rtl" : "ltr", lang: lang, className: "daneh-root", "data-theme": theme, children: [
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("style", { children: `
         @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
         .daneh-root {
@@ -14117,13 +14200,13 @@ window.storage = {
         toast && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "toast", children: toast }),
         booting ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "loading-wrap", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "26px", display: "inline-block", animation: "spin 1s linear infinite" }, children: "\u2615" }) }) : screen === "welcome" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "gate-screen", children: [
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "gate-logo-ring", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DanehLogo, { size: 48 }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "gate-title", children: "\u0628\u0647 \u06A9\u0627\u0641\u0647 \u062F\u0627\u0646\u0647 \u062E\u0648\u0634 \u0627\u0648\u0645\u062F\u06CC" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "gate-sub", children: "\u0628\u0631\u0634\u062A\u0647\u200C\u06A9\u0627\u0631\u06CC \u062A\u0627\u0632\u0647\u060C \u0647\u0631 \u0631\u0648\u0632. \u0633\u0641\u0627\u0631\u0634 \u0628\u062F\u0647\u060C \u0627\u0645\u062A\u06CC\u0627\u0632 \u062C\u0645\u0639 \u06A9\u0646 \u0648 \u062F\u0627\u0646\u0647\u200C\u0647\u0627\u062A\u0648 \u067E\u0631 \u06A9\u0646 \u062A\u0627 \u06CC\u0647 \u0642\u0647\u0648\u0647 \u0645\u0647\u0645\u0648\u0646 \u0645\u0627 \u0628\u0627\u0634\u06CC." }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-btn", onClick: () => setScreen("login"), children: "\u0628\u0632\u0646 \u0628\u0631\u06CC\u0645" })
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "gate-title", children: window.t("welcomeTitle") }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "gate-sub", children: window.t("welcomeSub") }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-btn", onClick: () => setScreen("login"), children: window.t("welcomeBtn") })
         ] }) : screen === "login" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "gate-screen", style: { overflowY: "auto" }, children: [
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "gate-logo-ring", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DanehLogo, { size: 42 }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "gate-title", children: "\u0648\u0631\u0648\u062F \u0628\u0647 \u062D\u0633\u0627\u0628" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "gate-sub", children: "\u0628\u0631\u0627\u06CC \u067E\u06CC\u06AF\u06CC\u0631\u06CC \u0633\u0641\u0627\u0631\u0634\u200C\u0647\u0627 \u0648 \u0627\u0633\u062A\u0641\u0627\u062F\u0647 \u0627\u0632 \u0628\u0627\u0634\u06AF\u0627\u0647 \u0645\u0634\u062A\u0631\u06CC\u0627\u0646\u060C \u0627\u0637\u0644\u0627\u0639\u0627\u062A\u062A \u0631\u0648 \u0648\u0627\u0631\u062F \u06A9\u0646" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "gate-title", children: window.t("loginTitle") }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "gate-sub", children: window.t("loginSub") }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "gate-form", children: [
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "field-label", children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "13px" }, children: "\uD83D\uDC64" }),
@@ -14149,35 +14232,35 @@ window.storage = {
             ] }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", { className: "field-input", value: loginReferralInput, onChange: (e) => setLoginReferralInput(e.target.value), placeholder: "\u0645\u062B\u0644\u0627\u064B DANEH1234" })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-btn", disabled: !canLogin, style: { opacity: canLogin ? 1 : 0.45 }, onClick: () => handleLogin(false), children: "\u0648\u0631\u0648\u062F" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-link", onClick: () => handleLogin(true), children: "\u0627\u062F\u0627\u0645\u0647 \u0628\u0647\u200C\u0639\u0646\u0648\u0627\u0646 \u0645\u0647\u0645\u0627\u0646" })
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-btn", disabled: !canLogin, style: { opacity: canLogin ? 1 : 0.45 }, onClick: () => handleLogin(false), children: window.t("loginBtn") }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-link", onClick: () => handleLogin(true), children: window.t("guestBtn") })
         ] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", { className: "app-header", children: [
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "logo-row", children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "logo-mark", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DanehLogo, { size: 22, withSteam: false }) }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "brand-name", children: "\u06A9\u0627\u0641\u0647 \u062F\u0627\u0646\u0647" }),
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "brand-tag", children: user && user.name && user.name !== "\u0645\u0647\u0645\u0627\u0646" ? "\u062E\u0648\u0634 \u0622\u0645\u062F\u06CC\u062F\u060C " + user.name + " \uD83D\uDC4B" : "\u0628\u0631\u0634\u062A\u0647\u200C\u06A9\u0627\u0631\u06CC \u062A\u0627\u0632\u0647\u060C \u0647\u0631 \u0631\u0648\u0632" })
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "brand-name", children: window.t("brandName") }),
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "brand-tag", children: user && user.name && user.name !== "\u0645\u0647\u0645\u0627\u0646" ? window.t("welcomeUser") + user.name + " \uD83D\uDC4B" : window.t("brandTag") })
               ] })
             ] }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "theme-quick-btn", onClick: () => { if (navigator.share) { navigator.share({ title: "\u06A9\u0627\u0641\u0647 \u062F\u0627\u0646\u0647", text: "\u0645\u0646\u0648 \u06A9\u0627\u0641\u0647 \u062F\u0627\u0646\u0647 \u0631\u0648 \u0628\u0628\u06CC\u0646!", url: window.location.href }); } else { navigator.clipboard && navigator.clipboard.writeText(window.location.href); alert("\u0644\u06CC\u0646\u06A9 \u06A9\u067E\u06CC \u0634\u062F! \uD83D\uDCCB"); } }, "aria-label": "\u0627\u0634\u062A\u0631\u0627\u06A9\u200C\u06AF\u0630\u0627\u0631\u06CC", children: "\uD83D\uDCE4" }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "lang-btn", onClick: () => setLang(l => l === "fa" ? "en" : "fa"), children: lang === "fa" ? "EN" : "\u0641\u0627" }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "lang-btn", onClick: () => setLang(l => { const nl = l === "fa" ? "en" : "fa"; window.__LANG = nl; return nl; }), children: lang === "fa" ? "EN" : "\u0641\u0627" }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "theme-quick-btn", onClick: () => { setShowSearch(v => !v); }, "aria-label": "\u062C\u0633\u062A\u062C\u0648", children: "\uD83D\uDD0D" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "theme-quick-btn", onClick: () => { const ids = THEMES.map(t=>t.id); const cur = ids.indexOf(theme); setTheme(ids[(cur+1)%ids.length]); }, "aria-label": "\u062A\u063A\u06CC\u06CC\u0631 \u067E\u0648\u0633\u062A\u0647", children: "\uD83C\uDFA8" }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "avatar-btn", onClick: openAccount, "aria-label": "\u062D\u0633\u0627\u0628 \u06A9\u0627\u0631\u0628\u0631\u06CC", children: user && user.name ? user.name.trim().charAt(0) : "\u0645" })
           ] }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "scroll-area", children: [
             activeTab === "menu" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
               !isOpen() && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "closed-banner", children: lang === "fa" ? "\u06A9\u0627\u0641\u0647 \u0627\u0644\u0627\u0646 \u0628\u0633\u062A\u0647 \u0627\u0633\u062A \u{1F62A} \u00B7 \u0633\u0627\u0639\u0627\u062A \u06A9\u0627\u0631\u06CC: \u06F8 \u0635\u0628\u062D \u062A\u0627 \u06F1\u06F0 \u0634\u0628" : "Cafe is closed \uD83D\uDE2A \u00B7 Hours: 8AM - 10PM" }),
-              showSearch && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "search-bar", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "search-icon", children: "\uD83D\uDD0D" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", { type: "text", placeholder: "\u062C\u0633\u062A\u062C\u0648 \u062F\u0631 \u0645\u0646\u0648...", value: searchQuery, onChange: (e) => setSearchQuery(e.target.value), autoFocus: true }), searchQuery && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => { setSearchQuery(""); setShowSearch(false); }, style: { border: "none", background: "none", color: "var(--ink-soft)", fontSize: "16px", cursor: "pointer" }, children: "\u00D7" })] }) }),
+              showSearch && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "search-bar", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "search-icon", children: "\uD83D\uDD0D" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", { type: "text", placeholder: window.t("search"), value: searchQuery, onChange: (e) => setSearchQuery(e.target.value), autoFocus: true }), searchQuery && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => { setSearchQuery(""); setShowSearch(false); }, style: { border: "none", background: "none", color: "var(--ink-soft)", fontSize: "16px", cursor: "pointer" }, children: "\u00D7" })] }) }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "bundle-card", children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "28px" }, children: "\uD83C\uDF1F" }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1 }, children: [
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "10px", opacity: 0.7, fontWeight: 600 }, children: lang === "fa" ? "\uD83C\uDFAF \u067E\u06A9\u06CC\u062C \u0648\u06CC\u0698\u0647" : "\uD83C\uDFAF SPECIAL BUNDLE" }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "13px", fontWeight: 700 }, children: lang === "fa" ? "\u0642\u0647\u0648\u0647 + \u06A9\u0631\u0648\u0633\u0627\u0646 \u2014 \u0635\u0628\u062D\u0627\u0646\u0647 \u06A9\u0627\u0645\u0644" : "Coffee + Croissant \u2014 Full Breakfast" })
                 ] }),
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "bundle-badge", children: lang === "fa" ? "\u06F1\u06F5\u066A \u062A\u062E\u0641\u06CC\u0641" : "15% OFF" })
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "bundle-badge", children: lang === "fa" ? window.t("bundleDisc") : "15% OFF" })
               ] }),
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { margin: "14px 18px 0", background: "linear-gradient(135deg,#4A3728,#C49A3A)", borderRadius: "16px", padding: "12px 14px", display: "flex", alignItems: "center", gap: "10px", color: "#FAF8F4" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "22px" }, children: "\u2728" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1 }, children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "10px", opacity: 0.75, fontWeight: 600 }, children: "\u067E\u06CC\u0634\u0646\u0647\u0627\u062F \u0631\u0648\u0632" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "13px", fontWeight: 700 }, children: "\u0644\u0627\u062A\u0647 \u2014 \u0647\u0631 \u0631\u0648\u0632 \u0635\u0628\u062D \u06CC\u06A9 \u0646\u0641\u0631 \u0627\u0646\u062A\u062E\u0627\u0628 \u0645\u06CC\u200C\u0634\u0647" })] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { background: "rgba(255,255,255,0.2)", borderRadius: "999px", padding: "4px 12px", fontSize: "11px", fontWeight: 700, whiteSpace: "nowrap" }, children: "\u06F6\u06F5\u060C\u06F0\u06F0\u06F0 \u062A\u0648\u0645\u0627\u0646" })] }) }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { margin: "14px 18px 0", background: "linear-gradient(135deg,#4A3728,#C49A3A)", borderRadius: "16px", padding: "12px 14px", display: "flex", alignItems: "center", gap: "10px", color: "#FAF8F4" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "22px" }, children: "\u2728" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1 }, children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "10px", opacity: 0.75, fontWeight: 600 }, children: window.t("dailySpecial") }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "13px", fontWeight: 700 }, children: "\u0644\u0627\u062A\u0647 \u2014 \u0647\u0631 \u0631\u0648\u0632 \u0635\u0628\u062D \u06CC\u06A9 \u0646\u0641\u0631 \u0627\u0646\u062A\u062E\u0627\u0628 \u0645\u06CC\u200C\u0634\u0647" })] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { background: "rgba(255,255,255,0.2)", borderRadius: "999px", padding: "4px 12px", fontSize: "11px", fontWeight: 700, whiteSpace: "nowrap" }, children: "\u06F6\u06F5\u060C\u06F0\u06F0\u06F0 \u062A\u0648\u0645\u0627\u0646" })] }) }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "cat-bar", children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
                   "button",
@@ -14186,7 +14269,7 @@ window.storage = {
                     onClick: () => setShowFavoritesOnly((v) => !v),
                     children: [
                       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "13px" }, children: showFavoritesOnly ? "\u2665" : "\u2661" }),
-                      "\u0639\u0644\u0627\u0642\u0647\u200C\u0645\u0646\u062F\u06CC\u200C\u0647\u0627"
+                      window.t("favorites")
                     ]
                   }
                 ),
@@ -14202,7 +14285,7 @@ window.storage = {
                       },
                       children: [
                         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "13px" }, children: c.emoji }),
-                        c.label
+                        lang === "fa" ? c.labelFa : c.labelEn
                       ]
                     },
                     c.id
@@ -14214,9 +14297,9 @@ window.storage = {
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "11px" }, children: "\u21C5" }),
                   " \u0645\u0631\u062A\u0628\u200C\u0633\u0627\u0632\u06CC:"
                 ] }),
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "sort-chip" + (sortMode === "default" ? " active" : ""), onClick: () => setSortMode("default"), children: "\u067E\u06CC\u0634\u200C\u0641\u0631\u0636" }),
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "sort-chip" + (sortMode === "priceAsc" ? " active" : ""), onClick: () => setSortMode("priceAsc"), children: "\u0627\u0631\u0632\u0627\u0646\u200C\u062A\u0631\u06CC\u0646" }),
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "sort-chip" + (sortMode === "priceDesc" ? " active" : ""), onClick: () => setSortMode("priceDesc"), children: "\u06AF\u0631\u0627\u0646\u200C\u062A\u0631\u06CC\u0646" })
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "sort-chip" + (sortMode === "default" ? " active" : ""), onClick: () => setSortMode("default"), children: window.t("sortDefault") }),
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "sort-chip" + (sortMode === "priceAsc" ? " active" : ""), onClick: () => setSortMode("priceAsc"), children: window.t("sortAsc") }),
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "sort-chip" + (sortMode === "priceDesc" ? " active" : ""), onClick: () => setSortMode("priceDesc"), children: window.t("sortDesc") })
               ] }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "menu-list", children: [
                 visibleItems.length === 0 && showFavoritesOnly && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "empty-state", children: [
@@ -14235,13 +14318,13 @@ window.storage = {
                     /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "item-thumb", style: PHOTOS[item.id] ? void 0 : { background: style.grad }, children: PHOTOS[item.id] ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", { src: PHOTOS[item.id], alt: item.name, className: "item-thumb-img" }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CatIcon, { size: 24, color: style.fg }) }),
                     /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "item-body", children: [
                       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "item-name-row", children: [
-                        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "item-name", children: item.name }),
-                        (item.popular || ratings[item.id] >= 4) && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "popular-badge", children: ratings[item.id] ? "\u2B50 " + ratings[item.id] + "/5" : "\u2B50 \u067E\u0631\u0637\u0631\u0641\u062F\u0627\u0631" })
+                        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "item-name", children: lang === "en" && item.nameEn ? item.nameEn : item.name }),
+                        (item.popular || ratings[item.id] >= 4) && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "popular-badge", children: ratings[item.id] ? "\u2B50 " + ratings[item.id] + "/5" : "\u2B50 " + window.t("popular") })
                       ] }),
-                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "item-desc", children: item.desc }),
+                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "item-desc", children: lang === "en" && item.descEn ? item.descEn : item.desc }),
                       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "item-price", children: [
                         formatToman(price),
-                        " \u062A\u0648\u0645\u0627\u0646"
+                        " " + window.t("toman")
                       ] }),
                       pairItem && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "pair-line", children: [
                         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "11px" }, children: "\uD83C\uDF74" }),
@@ -14261,7 +14344,7 @@ window.storage = {
             activeTab === "cart" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_jsx_runtime.Fragment, { children: cartItems.length === 0 && !redeemedItem ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "empty-state", children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "em-emoji", children: "\u2615" }),
               "\u0633\u0628\u062F \u062E\u0631\u06CC\u062F\u062A \u062E\u0627\u0644\u06CC\u0647",
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "empty-btn", onClick: () => setActiveTab("menu"), children: "\u0631\u0641\u062A\u0646 \u0628\u0647 \u0645\u0646\u0648" }) })
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "empty-btn", onClick: () => setActiveTab("menu"), children: window.t("goToMenu") }) })
             ] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
               loyalty.rewards > 0 && !redeemedItem && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "redeem-banner", children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "20px" }, children: "\uD83C\uDF81" }),
@@ -14269,11 +14352,11 @@ window.storage = {
                   toFa(loyalty.rewards),
                   " \u062C\u0627\u06CC\u0632\u0647 \u062F\u0627\u0631\u06CC! \u06CC\u0647 \u0622\u06CC\u062A\u0645 \u0631\u0627\u06CC\u06AF\u0627\u0646 \u0627\u0646\u062A\u062E\u0627\u0628 \u06A9\u0646"
                 ] }),
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => setRedeemSheetOpen(true), children: "\u0627\u0646\u062A\u062E\u0627\u0628 \u062C\u0627\u06CC\u0632\u0647" })
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => setRedeemSheetOpen(true), children: window.t("redeemGift") })
               ] }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "coupon-row", children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", { className: "coupon-input", placeholder: "\u06A9\u062F \u062A\u062E\u0641\u06CC\u0641...", value: couponCode, onChange: e => setCouponCode(e.target.value), onKeyDown: e => e.key === "Enter" && applyCoupon() }),
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "coupon-btn", onClick: applyCoupon, children: "\u0627\u0639\u0645\u0627\u0644" })
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "coupon-btn", onClick: applyCoupon, children: window.t("couponApply") })
               ] }),
               couponMsg ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "coupon-msg " + (couponDiscount > 0 ? "ok" : "err"), children: couponMsg }) : null,
               discountRate > 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "discount-banner", children: [
@@ -14305,7 +14388,7 @@ window.storage = {
                     /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "cart-row-name", children: it.name }),
                     /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "cart-row-price", children: [
                       formatToman(it.price * it.qty),
-                      " \u062A\u0648\u0645\u0627\u0646"
+                      " " + window.t("toman")
                     ] })
                   ] })
                 ] }, it.id)),
@@ -14316,18 +14399,18 @@ window.storage = {
                     /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "cart-row-name", children: [
                       redeemedItem.name,
                       " ",
-                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { color: "var(--accent-gold)" }, children: "(\u062C\u0627\u06CC\u0632\u0647)" })
+                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { color: "var(--accent-gold)" }, children: "(" + window.t("giftLabel") + ")" })
                     ] }),
-                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "cart-row-price", children: "\u0631\u0627\u06CC\u06AF\u0627\u0646" })
+                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "cart-row-price", children: window.t("free") })
                   ] })
                 ] })
               ] }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "summary-box", children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "summary-line", children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "\u062C\u0645\u0639 \u062C\u0632\u0621" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: window.t("subtotal") }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
                     formatToman(subtotal),
-                    " \u062A\u0648\u0645\u0627\u0646"
+                    " " + window.t("toman")
                   ] })
                 ] }),
                 discountAmount > 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "summary-line discount-line", children: [
@@ -14339,7 +14422,7 @@ window.storage = {
                   /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
                     "-",
                     formatToman(discountAmount),
-                    " \u062A\u0648\u0645\u0627\u0646"
+                    " " + window.t("toman")
                   ] })
                 ] }),
                 redeemedItem && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "summary-line discount-line", children: [
@@ -14347,17 +14430,17 @@ window.storage = {
                     "\u{1F381} \u062C\u0627\u06CC\u0632\u0647: ",
                     redeemedItem.name
                   ] }),
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "\u0631\u0627\u06CC\u06AF\u0627\u0646" })
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: window.t("free") })
                 ] }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "summary-line summary-total", children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "\u0645\u0628\u0644\u063A \u0642\u0627\u0628\u0644 \u067E\u0631\u062F\u0627\u062E\u062A" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: window.t("total") }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
                     formatToman(cartTotal),
-                    " \u062A\u0648\u0645\u0627\u0646"
+                    " " + window.t("toman")
                   ] })
                 ] })
               ] }),
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "checkout-btn", disabled: cartItems.length === 0, onClick: () => setCheckoutOpen(true), children: "\u0627\u062F\u0627\u0645\u0647 \u0648 \u062B\u0628\u062A \u0633\u0641\u0627\u0631\u0634" })
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "checkout-btn", disabled: cartItems.length === 0, onClick: () => setCheckoutOpen(true), children: window.t("checkout") })
             ] }) }),
             activeTab === "loyalty" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "loyalty-hero", children: [
@@ -14366,10 +14449,10 @@ window.storage = {
                   tier.label
                 ] }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "points-num", children: toFa(loyalty.points) }),
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "points-lbl", children: "\u0627\u0645\u062A\u06CC\u0627\u0632 \u062C\u0645\u0639\u200C\u0634\u062F\u0647" })
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "points-lbl", children: window.t("pointsLabel") })
               ] }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "bean-card", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontWeight: 700, fontSize: 13.5, textAlign: "center" }, children: "\u062F\u0627\u0646\u0647\u200C\u0647\u0627\u06CC \u0634\u0645\u0627 \u062A\u0627 \u0642\u0647\u0648\u0647\u200C\u06CC \u0631\u0627\u06CC\u06AF\u0627\u0646" }),
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontWeight: 700, fontSize: 13.5, textAlign: "center" }, children: window.t("stamps") }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "bean-row", children: Array.from({ length: 8 }).map((_, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Bean, { filled: i < loyalty.stamps }, i)) }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { textAlign: "center", fontSize: 11.5, color: "var(--ink-soft)" }, children: [
                   toFa(loyalty.stamps),
@@ -14394,7 +14477,7 @@ window.storage = {
                   toFa(WEEKLY_GOAL),
                   " \u0686\u0627\u06CC"
                 ] }),
-                weekly.rewardReady && !weekly.rewardClaimed && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "checkout-btn", style: { width: "100%", margin: "12px 0 0" }, onClick: () => setChallengeRedeemOpen(true), children: "\u062F\u0631\u06CC\u0627\u0641\u062A \u062C\u0627\u06CC\u0632\u0647\u200C\u06CC \u0686\u0627\u0644\u0634" })
+                weekly.rewardReady && !weekly.rewardClaimed && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "checkout-btn", style: { width: "100%", margin: "12px 0 0" }, onClick: () => setChallengeRedeemOpen(true), children: window.t("claimChallenge") })
               ] }),
               user && user.birthday && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "info-card", style: { display: "flex", alignItems: "center", gap: 8 }, children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "16px" }, children: "\uD83C\uDF89" }),
@@ -14417,7 +14500,7 @@ window.storage = {
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 12, color: "var(--ink-soft)", textAlign: "center", margin: "8px 0" }, children: "\u0628\u0627 \u0627\u0633\u06A9\u0646 \u0645\u0646\u0648\u060C \u06CC\u0647 \u0634\u06CC\u0631\u06CC\u0646\u06CC \u0633\u0648\u0631\u067E\u0631\u0627\u06CC\u0632 \u0627\u0646\u062A\u062E\u0627\u0628 \u06A9\u0646\u06CC\u062F \u0648 \u0627\u0632 \u0637\u0631\u0641 \u0634\u0645\u0627 \u0628\u0647 \u062F\u0648\u0633\u062A\u062A\u0648\u0646 \u0647\u062F\u06CC\u0647 \u0628\u062F\u06CC\u0645 \u2014 \u06A9\u0627\u0641\u0647 \u062F\u0627\u0646\u0647 \u062D\u0633\u0627\u0628 \u0645\u06CC\u200C\u06A9\u0646\u0647!" }),
                 giftSent ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { textAlign: "center", padding: "12px 0" }, children: [
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 28, marginBottom: 8 }, children: "\u{1F381}" }),
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontWeight: 700, fontSize: 13 }, children: "\u0647\u062F\u06CC\u0647 \u0641\u0631\u0633\u062A\u0627\u062F\u0647 \u0634\u062F!" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontWeight: 700, fontSize: 13 }, children: window.t("giftSent") }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { fontSize: 12, color: "var(--ink-soft)", marginTop: 4 }, children: [
                     "\u06CC\u0647 ",
                     /* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: giftSent.item }),
@@ -14463,7 +14546,7 @@ window.storage = {
                       },
                       children: [
                         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "14px" }, children: "\uD83C\uDF81" }),
-                        "\u0627\u0646\u062A\u062E\u0627\u0628 \u062A\u0635\u0627\u062F\u0641\u06CC \u0648 \u0627\u0631\u0633\u0627\u0644 \u0647\u062F\u06CC\u0647"
+                        window.t("randomSend")
                       ]
                     }
                   )
@@ -14477,7 +14560,7 @@ window.storage = {
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 12, color: "var(--ink-soft)", textAlign: "center", margin: "6px 0 14px" }, children: "\u06A9\u0627\u0641\u0647 \u062F\u0627\u0646\u0647 \u0631\u0648 \u0628\u0631\u0627\u06CC \u062A\u0648\u0644\u062F\u060C \u062C\u0644\u0633\u0647\u060C \u062F\u0648\u0631\u0647\u0645\u06CC \u06CC\u0627 \u0647\u0631 \u0645\u0646\u0627\u0633\u0628\u062A\u06CC \u0631\u0632\u0631\u0648 \u06A9\u0646\u06CC\u062F" }),
                 reserveSubmitted ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { textAlign: "center", padding: "12px 0" }, children: [
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 28, marginBottom: 8 }, children: "\u{1F942}" }),
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontWeight: 700, fontSize: 13 }, children: "\u062F\u0631\u062E\u0648\u0627\u0633\u062A \u0631\u0632\u0631\u0648 \u062B\u0628\u062A \u0634\u062F!" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontWeight: 700, fontSize: 13 }, children: window.t("reserveSuccess") }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { fontSize: 12, color: "var(--ink-soft)", marginTop: 6, lineHeight: 1.9 }, children: [
                     "\u062A\u06CC\u0645 \u06A9\u0627\u0641\u0647 \u062F\u0627\u0646\u0647 \u062F\u0631 \u0627\u0633\u0631\u0639 \u0648\u0642\u062A \u0628\u0627 \u0634\u0645\u0627 \u062A\u0645\u0627\u0633 \u0645\u06CC\u200C\u06AF\u06CC\u0631\u0646\u062F \u0648 \u062C\u0632\u0626\u06CC\u0627\u062A \u0631\u0627 \u062A\u0623\u06CC\u06CC\u062F \u0645\u06CC\u200C\u06A9\u0646\u0646\u062F.",
                     /* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
@@ -14590,8 +14673,8 @@ window.storage = {
                 ] })
               ] })
             ] }),
-            activeTab === "dashboard" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_jsx_runtime.Fragment, { children: (() => { if (!adminOpen) return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { padding: "60px 30px", textAlign: "center" }, children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "40px", marginBottom: "16px" }, children: "\uD83D\uDD12" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontWeight: 700, fontSize: "16px", marginBottom: "8px" }, children: "\u062F\u0627\u0634\u0628\u0648\u0631\u062F \u0645\u062F\u06CC\u0631\u06CC\u062A" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { color: "var(--ink-soft)", fontSize: "13px", marginBottom: "20px" }, children: "\u0628\u0631\u0627\u06CC \u062F\u0633\u062A\u0631\u0633\u06CC \u0628\u0647 \u062F\u0627\u0634\u0628\u0648\u0631\u062F\u060C \u0627\u0628\u062A\u062F\u0627 \u0627\u0632 \u067E\u0646\u0644 \u0645\u062F\u06CC\u0631\u06CC\u062A \u0648\u0627\u0631\u062F \u0634\u0648\u06CC\u062F" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "empty-btn", onClick: () => openAccount(), children: "\u0648\u0631\u0648\u062F \u0628\u0647 \u067E\u0646\u0644 \u0645\u062F\u06CC\u0631\u06CC\u062A" })] }); return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dashboard", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dash-title", children: "\uD83D\uDCCA \u062F\u0627\u0634\u0628\u0648\u0631\u062F \u0641\u0631\u0648\u0634" }),
+            activeTab === "dashboard" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_jsx_runtime.Fragment, { children: (() => { if (!adminOpen) return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { padding: "60px 30px", textAlign: "center" }, children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "40px", marginBottom: "16px" }, children: "\uD83D\uDD12" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontWeight: 700, fontSize: "16px", marginBottom: "8px" }, children: window.t("adminLock") }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { color: "var(--ink-soft)", fontSize: "13px", marginBottom: "20px" }, children: window.t("adminLockSub") }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "empty-btn", onClick: () => openAccount(), children: window.t("adminLockBtn") })] }); return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dashboard", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dash-title", children: window.t("dashTitle") }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { background: "var(--surface-2)", borderRadius: "12px", padding: "10px 14px", marginBottom: "10px", fontSize: "12px", color: "var(--ink-soft)" }, children: ["\uD83C\uDF10 \u062F\u0627\u0645\u0646\u0647 \u0627\u062E\u062A\u0635\u0627\u0635\u06CC: \u0627\u0632 NIC.ir \u062B\u0628\u062A \u06A9\u0646\u06CC\u062F"] }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { background: "#EAF1E8", borderRadius: "12px", padding: "10px 14px", marginBottom: "10px", fontSize: "12px", color: "var(--accent-green)" }, children: ["\uD83D\uDCB3 \u062F\u0631\u06AF\u0627\u0647 \u067E\u0631\u062F\u0627\u062E\u062A: \u062B\u0628\u062A\u200C\u0646\u0627\u0645 \u062F\u0631 zarinpal.com \u2192 Merchant ID \u0628\u06AF\u06CC\u0631\u06CC\u062F \u2192 \u062F\u0631 \u06A9\u062F \u062C\u0627\u06CC\u06AF\u0632\u06CC\u0646 \u06A9\u0646\u06CC\u062F"] }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { onClick: () => { if ("Notification" in window) { Notification.requestPermission().then(p => alert(p === "granted" ? "\u2705 \u067E\u0648\u0634 \u0646\u0648\u062A\u06CC\u0641 \u0641\u0639\u0627\u0644 \u0634\u062F!" : "\u274C \u0645\u062C\u0648\u0632 \u0631\u062F \u0634\u062F")); } }, style: { width: "100%", background: "var(--ink)", color: "var(--bg)", border: "none", borderRadius: "12px", padding: "10px", fontSize: "13px", fontWeight: 700, marginBottom: "14px", cursor: "pointer" }, children: ["\uD83D\uDD14 \u0641\u0639\u0627\u0644\u200C\u0633\u0627\u0632\u06CC \u067E\u0648\u0634 \u0646\u0648\u062A\u06CC\u0641\u06CC\u06A9\u06CC\u0634\u0646 \u0628\u0631\u0627\u06CC \u0645\u0634\u062A\u0631\u06CC\u0627\u0646"] }),
@@ -14604,17 +14687,17 @@ window.storage = {
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dash-card", children: [
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-label", children: "\u062F\u0631\u0622\u0645\u062F \u06A9\u0644" }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-value", style: { fontSize: "16px" }, children: formatToman(orders.reduce((s, o) => s + (o.total || 0), 0)) }),
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-sub", children: "\u062A\u0648\u0645\u0627\u0646" })
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-sub", children: window.t("toman") })
                 ] }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dash-card", children: [
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-label", children: "\u0645\u06CC\u0627\u0646\u06AF\u06CC\u0646 \u0633\u0641\u0627\u0631\u0634" }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-value", style: { fontSize: "16px" }, children: orders.length ? formatToman(Math.round(orders.reduce((s, o) => s + (o.total || 0), 0) / orders.length)) : "0" }),
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-sub", children: "\u062A\u0648\u0645\u0627\u0646" })
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-sub", children: window.t("toman") })
                 ] }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dash-card", children: [
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-label", children: "\u06A9\u0644 \u062A\u062E\u0641\u06CC\u0641" }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-value", style: { fontSize: "16px" }, children: formatToman(orders.reduce((s, o) => s + (o.discount || 0), 0)) }),
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-sub", children: "\u062A\u0648\u0645\u0627\u0646" })
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-sub", children: window.t("toman") })
                 ] })
               ] }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dash-section", children: [
@@ -14623,7 +14706,7 @@ window.storage = {
                 [...orders].reverse().slice(0, 5).map((o, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dash-order-row", children: [
                   /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dash-order-top", children: [
                     /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: o.id }),
-                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { color: "var(--accent-green)" }, children: formatToman(o.total) + " \u062A\u0648\u0645\u0627\u0646" })
+                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { color: "var(--accent-green)" }, children: formatToman(o.total) + " " + window.t("toman") })
                   ] }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dash-order-detail", children: (o.items || []).map(it => it.name + " x" + it.qty).join(" · ") })
                 ] }, i))
@@ -14647,14 +14730,14 @@ window.storage = {
             activeTab === "orders" && orderTimer && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "timer-bar", children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "20px" }, children: "\u23F3" }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1 }, children: [
-                /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { fontSize: "12px", fontWeight: 700, marginBottom: "4px" }, children: [lang === "fa" ? "\u062F\u0631 \u062D\u0627\u0644 \u0622\u0645\u0627\u062F\u0647\u200C\u0633\u0627\u0632\u06CC" : "Preparing your order", " \u00B7 ", Math.floor(timerSec/60), ":", String(timerSec%60).padStart(2,"0")] }),
+                /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { fontSize: "12px", fontWeight: 700, marginBottom: "4px" }, children: [lang === "fa" ? window.t("preparing") : "Preparing your order", " \u00B7 ", Math.floor(timerSec/60), ":", String(timerSec%60).padStart(2,"0")] }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "timer-progress", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "timer-fill", style: { width: Math.round(timerSec/orderTimer*100) + "%" } }) })
               ] })
             ] }),
             activeTab === "orders" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_jsx_runtime.Fragment, { children: orders.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "empty-state", children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "em-emoji", children: "\u{1F9FE}" }),
               "\u0647\u0646\u0648\u0632 \u0633\u0641\u0627\u0631\u0634\u06CC \u062B\u0628\u062A \u0646\u06A9\u0631\u062F\u06CC",
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "empty-btn", onClick: () => setActiveTab("menu"), children: "\u0631\u0641\u062A\u0646 \u0628\u0647 \u0645\u0646\u0648" }) })
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "empty-btn", onClick: () => setActiveTab("menu"), children: window.t("goToMenu") }) })
             ] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { paddingTop: 14 }, children: [
               orders.map((o) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "order-card", children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "order-head", children: [
@@ -14666,7 +14749,7 @@ window.storage = {
                 ] }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "order-items", children: o.items.map((it, idx) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", justifyContent: "space-between", fontSize: "12px", padding: "3px 0", borderBottom: "1px solid var(--line)" }, children: [
                   /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [it.name, " × ", toFa(it.qty)] }),
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { color: it.price === 0 ? "var(--accent-green)" : "var(--ink-soft)" }, children: it.price === 0 ? "\u0631\u0627\u06CC\u06AF\u0627\u0646 \uD83C\uDF81" : formatToman(it.price * it.qty) + " \u062A\u0648\u0645\u0627\u0646" })
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { color: it.price === 0 ? "var(--accent-green)" : "var(--ink-soft)" }, children: it.price === 0 ? "\u0631\u0627\u06CC\u06AF\u0627\u0646 \uD83C\uDF81" : formatToman(it.price * it.qty) + " " + window.t("toman") })
                 ] }, idx)) }),
                 o.discount > 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { fontSize: 11.5, color: "var(--accent-green)", marginTop: 4 }, children: [
                   "\u0634\u0627\u0645\u0644 ",
@@ -14683,13 +14766,13 @@ window.storage = {
                 ] }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", justifyContent: "space-between", marginTop: 8, fontSize: 12.5 }, children: [
                   /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { style: { color: "var(--ink-soft)" }, children: [
-                    o.type === "pickup" ? "\u062D\u0636\u0648\u0631\u06CC" : "\u0627\u0631\u0633\u0627\u0644",
+                    o.type === "pickup" ? window.t("pickup") : window.t("delivery"),
                     " \xB7 ",
                     o.date
                   ] }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { style: { fontWeight: 700 }, children: [
                     formatToman(o.total),
-                    " \u062A\u0648\u0645\u0627\u0646"
+                    " " + window.t("toman")
                   ] })
                 ] }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
@@ -14801,7 +14884,7 @@ window.storage = {
           ] }) }),
           redeemSheetOpen && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "sheet-overlay", onClick: () => setRedeemSheetOpen(false), children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "sheet", onClick: (e) => e.stopPropagation(), children: [
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "sheet-title", children: [
-              "\u0627\u0646\u062A\u062E\u0627\u0628 \u062C\u0627\u06CC\u0632\u0647",
+              window.t("redeemGift"),
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => setRedeemSheetOpen(false), "aria-label": "\u0628\u0633\u062A\u0646", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "20px", lineHeight: 1 }, children: "\u00D7" }) })
             ] }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 12, color: "var(--ink-soft)", marginBottom: 6 }, children: "\u06CC\u06A9\u06CC \u0627\u0632 \u0642\u0647\u0648\u0647\u200C\u0647\u0627 \u0631\u0648 \u0628\u0647\u200C\u0639\u0646\u0648\u0627\u0646 \u062C\u0627\u06CC\u0632\u0647\u200C\u06CC \u0631\u0627\u06CC\u06AF\u0627\u0646 \u0627\u0646\u062A\u062E\u0627\u0628 \u06A9\u0646" }),
@@ -14827,7 +14910,7 @@ window.storage = {
           ] }) }),
           adminOpen && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "sheet-overlay", onClick: () => setAdminOpen(false), children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "sheet", onClick: (e) => e.stopPropagation(), children: [
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "sheet-title", children: [
-              "\u0645\u062F\u06CC\u0631\u06CC\u062A \u0642\u06CC\u0645\u062A\u200C\u0647\u0627",
+              window.t("priceAdmin"),
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => setAdminOpen(false), "aria-label": "\u0628\u0633\u062A\u0646", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "20px", lineHeight: 1 }, children: "\u00D7" }) })
             ] }),
             !adminUnlocked ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "pin-wrap", children: [
@@ -14839,7 +14922,7 @@ window.storage = {
               MENU.map((m) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "admin-row", children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "ar-name", children: m.name }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", { value: adminDraft[m.id] || "", onChange: (e) => setAdminDraft({ ...adminDraft, [m.id]: e.target.value }), inputMode: "numeric" }),
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: 11, color: "var(--ink-soft)" }, children: "\u062A\u0648\u0645\u0627\u0646" })
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: 11, color: "var(--ink-soft)" }, children: window.t("toman") })
               ] }, m.id)),
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "checkout-btn", style: { width: "100%", margin: "16px 0 8px" }, onClick: saveAdminPrices, children: "\u0630\u062E\u06CC\u0631\u0647\u200C\u06CC \u0642\u06CC\u0645\u062A\u200C\u0647\u0627" }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "reset-link", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: resetAdminPrices, children: "\u0628\u0627\u0632\u06AF\u0631\u062F\u0627\u0646\u06CC \u0642\u06CC\u0645\u062A\u200C\u0647\u0627\u06CC \u067E\u06CC\u0634\u200C\u0641\u0631\u0636" }) })
@@ -14863,11 +14946,11 @@ window.storage = {
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "toggle-row", children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { className: "toggle-opt" + (scheduleMode === "now" ? " active" : ""), onClick: () => setScheduleMode("now"), children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "18px" }, children: "\u23F0" }),
-                "\u0647\u0645\u06CC\u0646 \u0627\u0644\u0627\u0646"
+                window.t("now")
               ] }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { className: "toggle-opt" + (scheduleMode === "later" ? " active" : ""), onClick: () => setScheduleMode("later"), children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "18px" }, children: "\uD83D\uDCC5" }),
-                "\u0632\u0645\u0627\u0646\u200C\u0628\u0646\u062F\u06CC\u200C\u0634\u062F\u0647"
+                window.t("scheduled")
               ] })
             ] }),
             scheduleMode === "later" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
@@ -14908,10 +14991,10 @@ window.storage = {
             ] }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "summary-box", style: { margin: "16px 0 0" }, children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "summary-line", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "\u062C\u0645\u0639 \u062C\u0632\u0621" }),
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: window.t("subtotal") }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
                   formatToman(subtotal),
-                  " \u062A\u0648\u0645\u0627\u0646"
+                  " " + window.t("toman")
                 ] })
               ] }),
               discountAmount > 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "summary-line discount-line", children: [
@@ -14919,7 +15002,7 @@ window.storage = {
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
                   "-",
                   formatToman(discountAmount),
-                  " \u062A\u0648\u0645\u0627\u0646"
+                  " " + window.t("toman")
                 ] })
               ] }),
               redeemedItem && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "summary-line discount-line", children: [
@@ -14927,13 +15010,13 @@ window.storage = {
                   "\u{1F381} ",
                   redeemedItem.name
                 ] }),
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "\u0631\u0627\u06CC\u06AF\u0627\u0646" })
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: window.t("free") })
               ] }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "summary-line summary-total", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "\u0645\u0628\u0644\u063A \u0642\u0627\u0628\u0644 \u067E\u0631\u062F\u0627\u062E\u062A" }),
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: window.t("total") }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
                   formatToman(cartTotal),
-                  " \u062A\u0648\u0645\u0627\u0646"
+                  " " + window.t("toman")
                 ] })
               ] })
             ] }),
@@ -14945,7 +15028,7 @@ window.storage = {
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { className: "checkout-btn", style: { width: "100%", margin: "0", background: "var(--accent-green)" }, disabled: !canSubmit, onClick: () => payWithZarinpal(cartTotal), children: [
                 "\uD83D\uDCB3 \u067E\u0631\u062F\u0627\u062E\u062A \u0622\u0646\u0644\u0627\u06CC\u0646 — ",
                 formatToman(cartTotal),
-                " \u062A\u0648\u0645\u0627\u0646"
+                " " + window.t("toman")
               ] }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { className: "checkout-btn", style: { width: "100%", margin: "0", background: "var(--surface-2)", color: "var(--ink-soft)", fontSize: "12px" }, disabled: !canSubmit, onClick: placeOrder, children: [
                 "\uD83D\uDCF2 \u062B\u0628\u062A \u0633\u0641\u0627\u0631\u0634 \u0628\u062F\u0648\u0646 \u067E\u0631\u062F\u0627\u062E\u062A \u0622\u0646\u0644\u0627\u06CC\u0646"
@@ -14957,7 +15040,7 @@ window.storage = {
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontWeight: 800, fontSize: 16 }, children: ONBOARD_STEPS[onboardStep].title }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 12.5, color: "var(--ink-soft)", marginTop: 8, lineHeight: 1.8 }, children: ONBOARD_STEPS[onboardStep].desc }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "onboard-dots", children: ONBOARD_STEPS.map((_, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "onboard-dot" + (i === onboardStep ? " active" : "") }, i)) }),
-            onboardStep < ONBOARD_STEPS.length - 1 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-btn", style: { maxWidth: "100%", marginTop: 4 }, onClick: () => setOnboardStep((s) => s + 1), children: "\u0628\u0639\u062F\u06CC" }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-btn", style: { maxWidth: "100%", marginTop: 4 }, onClick: dismissOnboarding, children: "\u0628\u0632\u0646 \u0628\u0631\u06CC\u0645" }),
+            onboardStep < ONBOARD_STEPS.length - 1 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-btn", style: { maxWidth: "100%", marginTop: 4 }, onClick: () => setOnboardStep((s) => s + 1), children: "\u0628\u0639\u062F\u06CC" }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-btn", style: { maxWidth: "100%", marginTop: 4 }, onClick: dismissOnboarding, children: window.t("welcomeBtn") }),
             onboardStep < ONBOARD_STEPS.length - 1 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-link", onClick: dismissOnboarding, children: "\u0631\u062F \u0634\u062F\u0646" })
           ] }) })
         ] })
