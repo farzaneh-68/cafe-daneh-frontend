@@ -85,21 +85,35 @@ html, body { margin: 0; padding: 0; background: #FAF8F4; height: 100%; overflow:
           .menu-list { padding-bottom: 100px; }
         }
         .app-header {
-          padding: 18px 18px 12px; background: var(--bg); border-bottom: 1px solid var(--line);
+          padding: 18px 18px 14px;
+          background: linear-gradient(135deg, #2B2118 0%, #4A3728 50%, #3D2E22 100%);
+          border-bottom: none;
           flex-shrink: 0; display: flex; align-items: center; justify-content: space-between;
+          position: relative; overflow: hidden;
         }
+        .app-header::before {
+          content: '';
+          position: absolute; inset: 0;
+          background: radial-gradient(ellipse at 20% 50%, rgba(196,154,58,0.18) 0%, transparent 60%),
+                      radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.05) 0%, transparent 50%);
+          pointer-events: none;
+        }
+        .app-header .logo-row, .app-header .avatar-btn { position: relative; z-index: 1; }
         .logo-row { display: flex; align-items: center; gap: 10px; }
         .logo-mark {
-          width: 38px; height: 38px; border-radius: 50%; background: var(--surface-2);
+          width: 38px; height: 38px; border-radius: 50%;
+          background: rgba(255,255,255,0.12);
           display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-          border: 2px solid var(--accent-gold);
+          border: 2px solid rgba(196,154,58,0.8);
+          backdrop-filter: blur(4px);
         }
-        .brand-name { font-weight: 800; font-size: 19px; letter-spacing: -0.3px; }
-        .brand-tag { font-size: 11.5px; color: var(--ink-soft); margin-top: 1px; }
+        .brand-name { font-weight: 800; font-size: 19px; letter-spacing: -0.3px; color: #FAF8F4; }
+        .brand-tag { font-size: 11.5px; color: rgba(250,248,244,0.65); margin-top: 1px; }
         .avatar-btn {
-          width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line);
-          background: var(--ink); color: var(--bg); font-weight: 700; font-size: 13px;
+          width: 34px; height: 34px; border-radius: 50%; border: 2px solid rgba(196,154,58,0.7);
+          background: rgba(255,255,255,0.12); color: #FAF8F4; font-weight: 700; font-size: 13px;
           display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+          backdrop-filter: blur(4px);
         }
         .scroll-area { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; }
         .cat-bar { display: flex; gap: 8px; padding: 14px 18px 8px; overflow-x: auto; }
@@ -125,7 +139,7 @@ html, body { margin: 0; padding: 0; background: #FAF8F4; height: 100%; overflow:
         }
         .fav-btn { position: absolute; top: 9px; right: 9px; background: rgba(255,255,255,0.85); border-radius: 50%; border: none; color: var(--ink-soft); padding: 4px; display: flex; box-shadow: 0 1px 4px rgba(0,0,0,0.15); z-index: 2; }
         .item-thumb {
-          width: 72px; height: 72px; border-radius: 16px; flex-shrink: 0;
+          width: 90px; height: 90px; border-radius: 16px; flex-shrink: 0;
           display: flex; align-items: center; justify-content: center;
           box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15);
           overflow: hidden;
@@ -135,8 +149,11 @@ html, body { margin: 0; padding: 0; background: #FAF8F4; height: 100%; overflow:
         .item-name-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
         .item-name { font-weight: 700; font-size: 14.5px; }
         .popular-badge {
-          display: inline-flex; align-items: center; gap: 2px; background: #FBF1DD; color: var(--accent-gold);
-          font-size: 9.5px; font-weight: 700; padding: 2px 6px; border-radius: 999px;
+          display: inline-flex; align-items: center; gap: 3px;
+          background: linear-gradient(135deg, #C49A3A, #E8BB5A);
+          color: #fff;
+          font-size: 9.5px; font-weight: 700; padding: 3px 8px; border-radius: 999px;
+          box-shadow: 0 1px 4px rgba(196,154,58,0.35);
         }
         .item-desc { font-size: 12px; color: var(--ink-soft); margin-top: 2px; line-height: 1.5; }
         .item-price { font-size: 13px; font-weight: 700; color: var(--accent-green); margin-top: 6px; }
@@ -147,7 +164,20 @@ html, body { margin: 0; padding: 0; background: #FAF8F4; height: 100%; overflow:
         .add-btn {
           background: var(--ink); color: var(--bg); border: none; width: 34px; height: 34px; border-radius: 50%;
           display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+          transition: transform 0.15s ease, background 0.15s ease;
+          -webkit-tap-highlight-color: transparent;
         }
+        .add-btn:active {
+          transform: scale(0.82);
+          background: var(--accent-green);
+        }
+        @keyframes pop {
+          0% { transform: scale(1); }
+          40% { transform: scale(1.28); }
+          70% { transform: scale(0.92); }
+          100% { transform: scale(1); }
+        }
+        .add-btn.popped { animation: pop 0.32s ease forwards; }
         .qty-stepper { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
         .qty-btn {
           width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface);
