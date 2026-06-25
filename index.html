@@ -13191,45 +13191,45 @@ window.storage = {
   window.t = function(key) { var tr = window.__TR; var lang = window.__LANG || "fa"; return (tr && tr[lang] && tr[lang][key]) || (tr && tr["fa"] && tr["fa"][key]) || key; };
   window.__TR = {
     fa: {
-      welcomeTitle: "به کافه دانه خوش اومدی",
-      welcomeSub: "برشته‌کاری تازه، هر روز. سفارش بده، امتیاز جمع کن.",
-      welcomeBtn: "بزن بریم", loginTitle: "ورود به حساب",
-      loginSub: "برای پیگیری سفارش‌ها و باشگاه مشتریان، اطلاعاتت رو وارد کن",
-      loginBtn: "ورود", guestBtn: "ادامه به‌عنوان مهمان",
+      welcomeTitle: window.__LANG==="en"?"Welcome to Cafe Daneh":"به کافه دانه خوش اومدی",
+      welcomeSub: window.__LANG==="en"?"Fresh roast, every day. Order & earn points.":"برشته‌کاری تازه، هر روز. سفارش بده، امتیاز جمع کن.",
+      welcomeBtn: window.__LANG==="en"?"Let's go":"بزن بریم", loginTitle: window.__LANG==="en"?"Sign In":"ورود به حساب",
+      loginSub: window.__LANG==="en"?"Track orders and use loyalty benefits":"برای پیگیری سفارش‌ها و باشگاه مشتریان، اطلاعاتت رو وارد کن",
+      loginBtn: "ورود", guestBtn: window.__LANG==="en"?"Continue as Guest":"ادامه به‌عنوان مهمان",
       menu: "منو", cart: "سبد", loyalty: "باشگاه", reserve: "رزرو", orders: "سفارش‌ها", dashboard: "مدیر",
       brandName: "کافه دانه", brandTag: "برشته‌کاری تازه، هر روز", welcomeUser: "خوش آمدید، ",
-      search: "جستجو در منو...", sort: "مرتب‌سازی", favorites: "علاقه‌مندی‌ها",
-      sortDefault: "پیش‌فرض", sortAsc: "ارزان‌ترین", sortDesc: "گران‌ترین",
+      search: "جستجو در منو...", sort: window.__LANG==="en"?"Sort":"مرتب‌سازی", favorites: window.__LANG==="en"?"Favorites":"علاقه‌مندی‌ها",
+      sortDefault: window.__LANG==="en"?"Default":"پیش‌فرض", sortAsc: window.__LANG==="en"?"Cheapest":"ارزان‌ترین", sortDesc: window.__LANG==="en"?"Priciest":"گران‌ترین",
       catCoffee: "قهوه", catTea: "چای و دمنوش", catCake: "کیک و شیرینی", catCold: "نوشیدنی سرد",
-      popular: "پرطرفدار", toman: "تومان", pairWith: "خوب میشه با",
-      cartEmpty: "سبدت خالیه", goToMenu: "رفتن به منو",
-      checkout: "ادامه و ثبت سفارش", subtotal: "جمع جزء", total: "مبلغ قابل پرداخت", free: "رایگان",
-      couponPlaceholder: "کد تخفیف...", couponApply: "اعمال",
+      popular: "پرطرفدار", toman: "تومان", pairWith: window.__LANG==="en"?"Pairs with":"خوب میشه با",
+      cartEmpty: window.__LANG==="en"?"Your cart is empty":"سبدت خالیه", goToMenu: window.__LANG==="en"?"Go to Menu":"رفتن به منو",
+      checkout: window.__LANG==="en"?"Checkout":"ادامه و ثبت سفارش", subtotal: window.__LANG==="en"?"Subtotal":"جمع جزء", total: window.__LANG==="en"?"Total":"مبلغ قابل پرداخت", free: "رایگان",
+      couponPlaceholder: window.__LANG==="en"?"Discount code...":"کد تخفیف...", couponApply: window.__LANG==="en"?"Apply":"اعمال",
       payOnline: "💳 پرداخت آنلاین", orderWithoutPay: "📲 ثبت بدون پرداخت آنلاین",
       pickup: "حضوری", delivery: "ارسال",
-      deliveryAddr: "آدرس تحویل", yourName: "نام شما", phone: "شماره تماس",
-      orderNote: "یادداشت سفارش (اختیاری)", now: "همین الان", scheduled: "زمان‌بندی‌شده",
-      deliveryTime: "ساعت تحویل", finalCalc: "مبلغ نهایی توسط سرور محاسبه می‌شود",
-      redeemGift: "انتخاب جایزه", giftLabel: "جایزه",
+      deliveryAddr: window.__LANG==="en"?"Delivery address":"آدرس تحویل", yourName: window.__LANG==="en"?"Your name":"نام شما", phone: window.__LANG==="en"?"Phone number":"شماره تماس",
+      orderNote: window.__LANG==="en"?"Order note (optional)":"یادداشت سفارش (اختیاری)", now: "همین الان", scheduled: window.__LANG==="en"?"Scheduled":"زمان‌بندی‌شده",
+      deliveryTime: window.__LANG==="en"?"Delivery time":"ساعت تحویل", finalCalc: window.__LANG==="en"?"Final amount calculated by server":"مبلغ نهایی توسط سرور محاسبه می‌شود",
+      redeemGift: window.__LANG==="en"?"Choose Gift":"انتخاب جایزه", giftLabel: "جایزه",
       closed: "کافه الان بسته است 😪 · ساعات کاری: ۸ صبح تا ۱۰ شب",
-      dailySpecial: "پیشنهاد روز", bundleTitle: "قهوه + کروسان — صبحانه کامل",
-      bundleTag: "پکیج ویژه", bundleDisc: "۱۵٪ تخفیف",
-      adminLock: "داشبورد مدیریت", adminLockSub: "ابتدا از پنل مدیریت وارد شوید",
-      adminLockBtn: "ورود به پنل مدیریت", dashTitle: "📊 داشبورد فروش",
-      loyaltyTitle: "باشگاه مشتریان دانه", currentLevel: "سطح فعلی",
-      pointsLabel: "امتیاز جمع‌شده", pointsToNext: "امتیاز تا سطح بعدی",
-      stampsRule: "۸ دانه = ۱ قهوه رایگان", yourReward: "جایزه‌ی شما",
-      claimChallenge: "دریافت جایزه‌ی چالش", weeklyChallenge: "۲ تا چای بخر، یه شیرینی رایگان بگیر",
-      referral: "دعوت دوستان", yourCode: "کد دعوت شما",
-      orderHistory: "تاریخچه سفارش‌ها", reorder: "سفارش مجدد",
-      preparing: "در حال آماده‌سازی",
-      tableReserve: "رزرو میز", guestCount: "تعداد نفر", occasion: "نوع مناسبت",
-      specialReq: "درخواست ویژه", confirmReserve: "ثبت رزرو", reserveSub: "کافه دانه رو برای هر مناسبتی رزرو کنید",
-      reserveSuccess: "درخواست رزرو ثبت شد!",
-      surpriseTitle: "هدیه سورپرایز", friendName: "نام دوستت", randomSend: "انتخاب تصادفی و ارسال هدیه",
-      surpriseSub: "با اسکن منو، یه شیرینی سورپرایز انتخاب کنید", giftSent: "هدیه فرستاده شد!",
-      priceAdmin: "مدیریت قیمت‌ها", savePrices: "ذخیره تغییرات",
-      ordersEmpty: "سفارشی ثبت نشده", pointsToNextLevel: "امتیاز تا سطح بعدی"
+      dailySpecial: window.__LANG==="en"?"Daily Special":"پیشنهاد روز", bundleTitle: window.__LANG==="en"?"Coffee + Croissant — Full Breakfast":"قهوه + کروسان — صبحانه کامل",
+      bundleTag: window.__LANG==="en"?"Special Bundle":"پکیج ویژه", bundleDisc: window.__LANG==="en"?"15% OFF":"۱۵٪ تخفیف",
+      adminLock: window.__LANG==="en"?"Admin Dashboard":"داشبورد مدیریت", adminLockSub: window.__LANG==="en"?"Please sign in to admin panel first":"ابتدا از پنل مدیریت وارد شوید",
+      adminLockBtn: window.__LANG==="en"?"Go to Admin Panel":"ورود به پنل مدیریت", dashTitle: "📊 داشبورد فروش",
+      loyaltyTitle: window.__LANG==="en"?"Daneh Loyalty Club":"باشگاه مشتریان دانه", currentLevel: window.__LANG==="en"?"Current level":"سطح فعلی",
+      pointsLabel: window.__LANG==="en"?"Points collected":"امتیاز جمع‌شده", pointsToNext: window.__LANG==="en"?"Points to next level":"امتیاز تا سطح بعدی",
+      stampsRule: window.__LANG==="en"?"8 stamps = 1 free coffee":"۸ دانه = ۱ قهوه رایگان", yourReward: window.__LANG==="en"?"Your reward":"جایزه‌ی شما",
+      claimChallenge: window.__LANG==="en"?"Claim Challenge Reward":"دریافت جایزه‌ی چالش", weeklyChallenge: window.__LANG==="en"?"Buy 2 teas, get a free pastry":window.__LANG==="en"?"Buy 2 teas, get a free pastry":"۲ تا چای بخر، یه شیرینی رایگان بگیر",
+      referral: window.__LANG==="en"?"Invite friends":"دعوت دوستان", yourCode: window.t("yourCode"),
+      orderHistory: window.__LANG==="en"?"Order history":"تاریخچه سفارش‌ها", reorder: window.__LANG==="en"?"Reorder":window.__LANG==="en"?"Reorder":"سفارش مجدد",
+      preparing: window.__LANG==="en"?"Preparing your order":"در حال آماده‌سازی",
+      tableReserve: window.__LANG==="en"?"Table reservation":"رزرو میز", guestCount: window.__LANG==="en"?"Number of guests":"تعداد نفر", occasion: window.__LANG==="en"?"Occasion type":window.__LANG==="en"?"Occasion type":"نوع مناسبت",
+      specialReq: window.__LANG==="en"?"Special request":"درخواست ویژه", confirmReserve: window.__LANG==="en"?"Confirm reservation":"ثبت رزرو", reserveSub: window.__LANG==="en"?"Reserve Cafe Daneh for any occasion":"کافه دانه رو برای هر مناسبتی رزرو کنید",
+      reserveSuccess: window.__LANG==="en"?"Reservation submitted!":"درخواست رزرو ثبت شد!",
+      surpriseTitle: "هدیه سورپرایز", friendName: window.__LANG==="en"?"Friend's name":"نام دوستت", randomSend: window.__LANG==="en"?"Random pick & send gift":"انتخاب تصادفی و ارسال هدیه",
+      surpriseSub: window.__LANG==="en"?"Pick a surprise treat from the menu":"با اسکن منو، یه شیرینی سورپرایز انتخاب کنید", giftSent: window.__LANG==="en"?"Gift sent!":"هدیه فرستاده شد!",
+      priceAdmin: window.__LANG==="en"?"Price management":"مدیریت قیمت‌ها", savePrices: window.__LANG==="en"?"Save changes":"ذخیره تغییرات",
+      ordersEmpty: window.__LANG==="en"?"No orders yet":"سفارشی ثبت نشده", pointsToNextLevel: window.__LANG==="en"?"Points to next level":"امتیاز تا سطح بعدی"
     },
     en: {
       welcomeTitle: "Welcome to Cafe Daneh",
@@ -13274,26 +13274,26 @@ window.storage = {
     }
   }
   var MENU = [
-    { id: "esp", cat: "coffee", name: "\u0627\u0633\u067E\u0631\u0633\u0648", nameEn: "Espresso", desc: "\u062A\u06A9\u200C\u0634\u0627\u062A \u0631\u06CC\u0632 \u0648 \u063A\u0644\u06CC\u0638\u060C \u062E\u0644\u0627\u0635\u0647\u200C\u06CC \u0642\u0647\u0648\u0647", descEn: "Rich single shot, the essence of coffee", price: 45e3, pair: "cro", popular: false },
-    { id: "ame", cat: "coffee", name: "\u0622\u0645\u0631\u06CC\u06A9\u0627\u0646\u0648", nameEn: "Americano", desc: "\u0627\u0633\u067E\u0631\u0633\u0648 \u0631\u0642\u06CC\u0642\u200C\u0634\u062F\u0647 \u0628\u0627 \u0622\u0628 \u062F\u0627\u063A", descEn: "Espresso diluted with hot water", price: 5e4, pair: "bro", popular: false },
-    { id: "lat", cat: "coffee", name: "\u0644\u0627\u062A\u0647", nameEn: "Latte", desc: "\u0627\u0633\u067E\u0631\u0633\u0648 \u0628\u0627 \u0634\u06CC\u0631 \u0628\u062E\u0627\u0631\u062F\u06CC\u062F\u0647 \u0648 \u06A9\u0641 \u0646\u0631\u0645", descEn: "Espresso with steamed milk and soft foam", price: 65e3, pair: "chz", popular: true },
-    { id: "cap", cat: "coffee", name: "\u06A9\u0627\u067E\u0648\u0686\u06CC\u0646\u0648", nameEn: "Cappuccino", desc: "\u06CC\u06A9\u200C\u0633\u0648\u0645 \u0627\u0633\u067E\u0631\u0633\u0648\u060C \u06CC\u06A9\u200C\u0633\u0648\u0645 \u0634\u06CC\u0631\u060C \u06CC\u06A9\u200C\u0633\u0648\u0645 \u06A9\u0641", descEn: "1/3 espresso, 1/3 milk, 1/3 foam", price: 65e3, pair: "cro", popular: false },
-    { id: "flw", cat: "coffee", name: "\u0641\u0644\u062A\u200C\u0648\u0627\u06CC\u062A", nameEn: "Flat White", desc: "\u062F\u0648\u0628\u0644 \u0631\u06CC\u0633\u062A\u0631\u062A\u0648 \u0628\u0627 \u06A9\u0641 \u0627\u0628\u0631\u06CC\u0634\u0645\u06CC", descEn: "Double ristretto with silky microfoam", price: 7e4, pair: "chz", popular: false },
-    { id: "trk", cat: "coffee", name: "\u0642\u0647\u0648\u0647\u200C\u062A\u0631\u06A9", nameEn: "Turkish Coffee", desc: "\u062F\u0645\u200C\u06A9\u0631\u062F\u0647 \u062F\u0631 \u062C\u0632\u0648\u0647\u200C\u06CC \u0645\u0633\u06CC\u060C \u062A\u0647\u200C\u0646\u0634\u06CC\u0646", descEn: "Brewed in copper pot, with sediment", price: 4e4, pair: "bro", popular: false },
-    { id: "moc", cat: "coffee", name: "\u0645\u0648\u06A9\u0627", nameEn: "Mocha", desc: "\u0627\u0633\u067E\u0631\u0633\u0648\u060C \u0634\u06A9\u0644\u0627\u062A \u062A\u0644\u062E \u0648 \u0634\u06CC\u0631 \u0628\u062E\u0627\u0631\u062F\u06CC\u062F\u0647", descEn: "Espresso, dark chocolate and steamed milk", price: 68e3, pair: "bro", popular: false },
-    { id: "mas", cat: "tea", name: "\u0686\u0627\u06CC \u0645\u0627\u0633\u0627\u0644\u0627", nameEn: "Masala Tea", desc: "\u062F\u0627\u0631\u0686\u06CC\u0646\u060C \u0647\u0644 \u0648 \u0632\u0646\u062C\u0628\u06CC\u0644 \u0628\u0627 \u0634\u06CC\u0631", descEn: "Cinnamon, cardamom and ginger with milk", price: 48e3, pair: "cro", popular: false },
-    { id: "bab", cat: "tea", name: "\u062F\u0645\u0646\u0648\u0634 \u0628\u0627\u0628\u0648\u0646\u0647 \u0648 \u0646\u0639\u0646\u0627", nameEn: "Chamomile Mint", desc: "\u0622\u0631\u0627\u0645\u0634\u200C\u0628\u062E\u0634\u060C \u0628\u062F\u0648\u0646 \u06A9\u0627\u0641\u0626\u06CC\u0646", descEn: "Calming blend, caffeine-free", price: 38e3, pair: "chz", popular: false },
-    { id: "mch", cat: "tea", name: "\u0645\u0627\u0686\u0627 \u0644\u0627\u062A\u0647", nameEn: "Matcha Latte", desc: "\u0686\u0627\u06CC \u0633\u0628\u0632 \u0698\u0627\u067E\u0646\u06CC \u0628\u0627 \u0634\u06CC\u0631 \u06AF\u0631\u0645", descEn: "Japanese green tea with warm milk", price: 62e3, pair: "bro", popular: false },
-    { id: "sia", cat: "tea", name: "\u0686\u0627\u06CC \u0633\u06CC\u0627\u0647 \u0627\u06CC\u0631\u0627\u0646\u06CC", nameEn: "Iranian Black Tea", desc: "\u062F\u0645\u200C\u06A9\u0631\u062F\u0647\u200C\u06CC \u0633\u0646\u062A\u06CC\u060C \u062A\u0627\u0632\u0647 \u0648 \u067E\u0631\u0631\u0646\u06AF", descEn: "Traditional brew, fresh and strong", price: 32e3, pair: "chz", popular: false },
-    { id: "chz", cat: "cake", name: "\u0686\u06CC\u0632\u06A9\u06CC\u06A9 \u0646\u06CC\u0648\u06CC\u0648\u0631\u06A9\u06CC", nameEn: "NY Cheesecake", desc: "\u0628\u0627\u0641\u062A \u06A9\u0631\u0645\u06CC \u0631\u0648\u06CC \u062E\u0645\u06CC\u0631 \u0628\u06CC\u0633\u06A9\u0648\u06CC\u062A\u06CC", descEn: "Creamy texture on a biscuit crust", price: 78e3, pair: "lat", popular: true },
-    { id: "cro", cat: "cake", name: "\u06A9\u0631\u0648\u0633\u0627\u0646 \u06A9\u0631\u0647\u200C\u0627\u06CC", nameEn: "Butter Croissant", desc: "\u062A\u0627\u0632\u0647 \u0627\u0632 \u0641\u0631\u060C \u0644\u0627\u06CC\u0647\u200C\u0644\u0627\u06CC\u0647 \u0648 \u062A\u0631\u062F", descEn: "Fresh from the oven, flaky and crisp", price: 55e3, pair: "esp", popular: false },
-    { id: "bro", cat: "cake", name: "\u0628\u0631\u0627\u0648\u0646\u06CC \u0634\u06A9\u0644\u0627\u062A\u06CC", nameEn: "Chocolate Brownie", desc: "\u0645\u063A\u0632\u062F\u0627\u0631 \u0648 \u0622\u0628\u200C\u062F\u0627\u0631\u060C \u0628\u0627 \u06AF\u0631\u062F\u0648", descEn: "Fudgy and moist, with walnuts", price: 5e4, pair: "ame", popular: false },
-    { id: "cok", cat: "cake", name: "\u06A9\u0648\u06A9\u06CC \u0634\u06A9\u0644\u0627\u062A\u06CC", nameEn: "Chocolate Cookie", desc: "\u0644\u0628\u0647\u200C\u062A\u0631\u062F \u0648 \u0648\u0633\u0637 \u0646\u0631\u0645\u060C \u0628\u0627 \u062A\u06A9\u0647\u200C\u0647\u0627\u06CC \u0634\u06A9\u0644\u0627\u062A", descEn: "Crispy edge and soft center, chocolate chips", price: 42e3, pair: "lat", popular: false },
-    { id: "ila", cat: "cold", name: "\u0622\u06CC\u0633\u200C\u0644\u0627\u062A\u0647", nameEn: "Iced Latte", desc: "\u0627\u0633\u067E\u0631\u0633\u0648 \u0633\u0631\u062F \u0628\u0627 \u0634\u06CC\u0631 \u0648 \u06CC\u062E", descEn: "Cold espresso with milk and ice", price: 68e3, pair: "chz", popular: true },
-    { id: "iam", cat: "cold", name: "\u0622\u06CC\u0633\u200C\u0622\u0645\u0631\u06CC\u06A9\u0627\u0646\u0648", nameEn: "Iced Americano", desc: "\u0642\u0647\u0648\u0647\u200C\u06CC \u0633\u0631\u062F \u0648 \u0631\u0641\u0631\u0634\u06CC\u0646\u06AF", descEn: "Cold and refreshing coffee", price: 55e3, pair: "bro", popular: false },
-    { id: "lem", cat: "cold", name: "\u0644\u06CC\u0645\u0648\u0646\u0627\u062F \u0646\u0639\u0646\u0627", nameEn: "Mint Lemonade", desc: "\u0644\u06CC\u0645\u0648\u06CC \u062A\u0627\u0632\u0647\u060C \u0646\u0639\u0646\u0627 \u0648 \u06A9\u0645\u06CC \u0622\u0628\u0644\u06CC\u0645\u0648", descEn: "Fresh lemon, mint and a dash of lime", price: 48e3, pair: "cro", popular: false },
-    { id: "smo", cat: "cold", name: "\u0627\u0633\u0645\u0648\u062A\u06CC \u062A\u0648\u062A\u200C\u0641\u0631\u0646\u06AF\u06CC", nameEn: "Strawberry Smoothie", desc: "\u062A\u0648\u062A\u200C\u0641\u0631\u0646\u06AF\u06CC\u060C \u0645\u0648\u0632 \u0648 \u0645\u0627\u0633\u062A", descEn: "Strawberry, banana and yogurt", price: 62e3, pair: "chz", popular: false },
-    { id: "cdb", cat: "cold", name: "\u06A9\u0644\u062F\u0628\u0631\u0648", nameEn: "Cold Brew", desc: "\u062F\u0645 \u0633\u0631\u062F \u06F1\u06F8 \u0633\u0627\u0639\u062A\u0647\u060C \u0645\u0644\u0627\u06CC\u0645 \u0648 \u06A9\u0645\u200C\u0627\u0633\u06CC\u062F\u06CC", descEn: "18-hour cold steep, smooth and low-acid", price: 72e3, pair: "cro", popular: true }
+    { id: "esp", cat: "coffee", name: "\u0627\u0633\u067E\u0631\u0633\u0648", nameEn: "Espresso", desc: "\u062A\u06A9\u200C\u0634\u0627\u062A \u0631\u06CC\u0632 \u0648 \u063A\u0644\u06CC\u0638\u060C \u062E\u0644\u0627\u0635\u0647\u200C\u06CC \u0642\u0647\u0648\u0647", descEn: "Rich single shot, the essence of coffee", price: 45e3, pair: "cro", pairNameEn: "Butter Croissant", popular: false },
+    { id: "ame", cat: "coffee", name: "\u0622\u0645\u0631\u06CC\u06A9\u0627\u0646\u0648", nameEn: "Americano", desc: "\u0627\u0633\u067E\u0631\u0633\u0648 \u0631\u0642\u06CC\u0642\u200C\u0634\u062F\u0647 \u0628\u0627 \u0622\u0628 \u062F\u0627\u063A", descEn: "Espresso diluted with hot water", price: 5e4, pair: "bro", pairNameEn: "Chocolate Brownie", popular: false },
+    { id: "lat", cat: "coffee", name: "\u0644\u0627\u062A\u0647", nameEn: "Latte", desc: "\u0627\u0633\u067E\u0631\u0633\u0648 \u0628\u0627 \u0634\u06CC\u0631 \u0628\u062E\u0627\u0631\u062F\u06CC\u062F\u0647 \u0648 \u06A9\u0641 \u0646\u0631\u0645", descEn: "Espresso with steamed milk and soft foam", price: 65e3, pair: "chz", pairNameEn: "NY Cheesecake", popular: true },
+    { id: "cap", cat: "coffee", name: "\u06A9\u0627\u067E\u0648\u0686\u06CC\u0646\u0648", nameEn: "Cappuccino", desc: "\u06CC\u06A9\u200C\u0633\u0648\u0645 \u0627\u0633\u067E\u0631\u0633\u0648\u060C \u06CC\u06A9\u200C\u0633\u0648\u0645 \u0634\u06CC\u0631\u060C \u06CC\u06A9\u200C\u0633\u0648\u0645 \u06A9\u0641", descEn: "1/3 espresso, 1/3 milk, 1/3 foam", price: 65e3, pair: "cro", pairNameEn: "Butter Croissant", popular: false },
+    { id: "flw", cat: "coffee", name: "\u0641\u0644\u062A\u200C\u0648\u0627\u06CC\u062A", nameEn: "Flat White", desc: "\u062F\u0648\u0628\u0644 \u0631\u06CC\u0633\u062A\u0631\u062A\u0648 \u0628\u0627 \u06A9\u0641 \u0627\u0628\u0631\u06CC\u0634\u0645\u06CC", descEn: "Double ristretto with silky microfoam", price: 7e4, pair: "chz", pairNameEn: "NY Cheesecake", popular: false },
+    { id: "trk", cat: "coffee", name: "\u0642\u0647\u0648\u0647\u200C\u062A\u0631\u06A9", nameEn: "Turkish Coffee", desc: "\u062F\u0645\u200C\u06A9\u0631\u062F\u0647 \u062F\u0631 \u062C\u0632\u0648\u0647\u200C\u06CC \u0645\u0633\u06CC\u060C \u062A\u0647\u200C\u0646\u0634\u06CC\u0646", descEn: "Brewed in copper pot, with sediment", price: 4e4, pair: "bro", pairNameEn: "Chocolate Brownie", popular: false },
+    { id: "moc", cat: "coffee", name: "\u0645\u0648\u06A9\u0627", nameEn: "Mocha", desc: "\u0627\u0633\u067E\u0631\u0633\u0648\u060C \u0634\u06A9\u0644\u0627\u062A \u062A\u0644\u062E \u0648 \u0634\u06CC\u0631 \u0628\u062E\u0627\u0631\u062F\u06CC\u062F\u0647", descEn: "Espresso, dark chocolate and steamed milk", price: 68e3, pair: "bro", pairNameEn: "Chocolate Brownie", popular: false },
+    { id: "mas", cat: "tea", name: "\u0686\u0627\u06CC \u0645\u0627\u0633\u0627\u0644\u0627", nameEn: "Masala Tea", desc: "\u062F\u0627\u0631\u0686\u06CC\u0646\u060C \u0647\u0644 \u0648 \u0632\u0646\u062C\u0628\u06CC\u0644 \u0628\u0627 \u0634\u06CC\u0631", descEn: "Cinnamon, cardamom and ginger with milk", price: 48e3, pair: "cro", pairNameEn: "Butter Croissant", popular: false },
+    { id: "bab", cat: "tea", name: "\u062F\u0645\u0646\u0648\u0634 \u0628\u0627\u0628\u0648\u0646\u0647 \u0648 \u0646\u0639\u0646\u0627", nameEn: "Chamomile Mint", desc: "\u0622\u0631\u0627\u0645\u0634\u200C\u0628\u062E\u0634\u060C \u0628\u062F\u0648\u0646 \u06A9\u0627\u0641\u0626\u06CC\u0646", descEn: "Calming blend, caffeine-free", price: 38e3, pair: "chz", pairNameEn: "NY Cheesecake", popular: false },
+    { id: "mch", cat: "tea", name: "\u0645\u0627\u0686\u0627 \u0644\u0627\u062A\u0647", nameEn: "Matcha Latte", desc: "\u0686\u0627\u06CC \u0633\u0628\u0632 \u0698\u0627\u067E\u0646\u06CC \u0628\u0627 \u0634\u06CC\u0631 \u06AF\u0631\u0645", descEn: "Japanese green tea with warm milk", price: 62e3, pair: "bro", pairNameEn: "Chocolate Brownie", popular: false },
+    { id: "sia", cat: "tea", name: "\u0686\u0627\u06CC \u0633\u06CC\u0627\u0647 \u0627\u06CC\u0631\u0627\u0646\u06CC", nameEn: "Iranian Black Tea", desc: "\u062F\u0645\u200C\u06A9\u0631\u062F\u0647\u200C\u06CC \u0633\u0646\u062A\u06CC\u060C \u062A\u0627\u0632\u0647 \u0648 \u067E\u0631\u0631\u0646\u06AF", descEn: "Traditional brew, fresh and strong", price: 32e3, pair: "chz", pairNameEn: "NY Cheesecake", popular: false },
+    { id: "chz", cat: "cake", name: "\u0686\u06CC\u0632\u06A9\u06CC\u06A9 \u0646\u06CC\u0648\u06CC\u0648\u0631\u06A9\u06CC", nameEn: "NY Cheesecake", desc: "\u0628\u0627\u0641\u062A \u06A9\u0631\u0645\u06CC \u0631\u0648\u06CC \u062E\u0645\u06CC\u0631 \u0628\u06CC\u0633\u06A9\u0648\u06CC\u062A\u06CC", descEn: "Creamy texture on a biscuit crust", price: 78e3, pair: "lat", pairNameEn: "Latte", popular: true },
+    { id: "cro", cat: "cake", name: "\u06A9\u0631\u0648\u0633\u0627\u0646 \u06A9\u0631\u0647\u200C\u0627\u06CC", nameEn: "Butter Croissant", desc: "\u062A\u0627\u0632\u0647 \u0627\u0632 \u0641\u0631\u060C \u0644\u0627\u06CC\u0647\u200C\u0644\u0627\u06CC\u0647 \u0648 \u062A\u0631\u062F", descEn: "Fresh from the oven, flaky and crisp", price: 55e3, pair: "esp", pairNameEn: "Espresso", popular: false },
+    { id: "bro", cat: "cake", name: "\u0628\u0631\u0627\u0648\u0646\u06CC \u0634\u06A9\u0644\u0627\u062A\u06CC", nameEn: "Chocolate Brownie", desc: "\u0645\u063A\u0632\u062F\u0627\u0631 \u0648 \u0622\u0628\u200C\u062F\u0627\u0631\u060C \u0628\u0627 \u06AF\u0631\u062F\u0648", descEn: "Fudgy and moist, with walnuts", price: 5e4, pair: "ame", pairNameEn: "Americano", popular: false },
+    { id: "cok", cat: "cake", name: "\u06A9\u0648\u06A9\u06CC \u0634\u06A9\u0644\u0627\u062A\u06CC", nameEn: "Chocolate Cookie", desc: "\u0644\u0628\u0647\u200C\u062A\u0631\u062F \u0648 \u0648\u0633\u0637 \u0646\u0631\u0645\u060C \u0628\u0627 \u062A\u06A9\u0647\u200C\u0647\u0627\u06CC \u0634\u06A9\u0644\u0627\u062A", descEn: "Crispy edge and soft center, chocolate chips", price: 42e3, pair: "lat", pairNameEn: "Latte", popular: false },
+    { id: "ila", cat: "cold", name: "\u0622\u06CC\u0633\u200C\u0644\u0627\u062A\u0647", nameEn: "Iced Latte", desc: "\u0627\u0633\u067E\u0631\u0633\u0648 \u0633\u0631\u062F \u0628\u0627 \u0634\u06CC\u0631 \u0648 \u06CC\u062E", descEn: "Cold espresso with milk and ice", price: 68e3, pair: "chz", pairNameEn: "NY Cheesecake", popular: true },
+    { id: "iam", cat: "cold", name: "\u0622\u06CC\u0633\u200C\u0622\u0645\u0631\u06CC\u06A9\u0627\u0646\u0648", nameEn: "Iced Americano", desc: "\u0642\u0647\u0648\u0647\u200C\u06CC \u0633\u0631\u062F \u0648 \u0631\u0641\u0631\u0634\u06CC\u0646\u06AF", descEn: "Cold and refreshing coffee", price: 55e3, pair: "bro", pairNameEn: "Chocolate Brownie", popular: false },
+    { id: "lem", cat: "cold", name: "\u0644\u06CC\u0645\u0648\u0646\u0627\u062F \u0646\u0639\u0646\u0627", nameEn: "Mint Lemonade", desc: "\u0644\u06CC\u0645\u0648\u06CC \u062A\u0627\u0632\u0647\u060C \u0646\u0639\u0646\u0627 \u0648 \u06A9\u0645\u06CC \u0622\u0628\u0644\u06CC\u0645\u0648", descEn: "Fresh lemon, mint and a dash of lime", price: 48e3, pair: "cro", pairNameEn: "Butter Croissant", popular: false },
+    { id: "smo", cat: "cold", name: "\u0627\u0633\u0645\u0648\u062A\u06CC \u062A\u0648\u062A\u200C\u0641\u0631\u0646\u06AF\u06CC", nameEn: "Strawberry Smoothie", desc: "\u062A\u0648\u062A\u200C\u0641\u0631\u0646\u06AF\u06CC\u060C \u0645\u0648\u0632 \u0648 \u0645\u0627\u0633\u062A", descEn: "Strawberry, banana and yogurt", price: 62e3, pair: "chz", pairNameEn: "NY Cheesecake", popular: false },
+    { id: "cdb", cat: "cold", name: "\u06A9\u0644\u062F\u0628\u0631\u0648", nameEn: "Cold Brew", desc: "\u062F\u0645 \u0633\u0631\u062F \u06F1\u06F8 \u0633\u0627\u0639\u062A\u0647\u060C \u0645\u0644\u0627\u06CC\u0645 \u0648 \u06A9\u0645\u200C\u0627\u0633\u06CC\u062F\u06CC", descEn: "18-hour cold steep, smooth and low-acid", price: 72e3, pair: "cro", pairNameEn: "Butter Croissant", popular: true }
   ];
   var CATEGORIES = [
     { id: "coffee", labelFa: "\u0642\u0647\u0648\u0647", labelEn: "Coffee", emoji: "\u2615" },
@@ -13345,11 +13345,13 @@ window.storage = {
   var WEEKLY_KEY = "daneh-weekly";
   var ONBOARD_KEY = "daneh-onboarded";
   var WEEKLY_GOAL = 2;
-  var MIN_DELIVERY_AMOUNT = 2e5;
+  var MIN_DELIVERY_AMOUNT = 280000;
   function formatToman(n) {
+    if (window.__LANG === "en") return n.toLocaleString("en-US");
     return n.toLocaleString("fa-IR");
   }
   function toFa(n) {
+    if (window.__LANG === "en") return String(n);
     return String(n).replace(/\d/g, (d) => "\u06F0\u06F1\u06F2\u06F3\u06F4\u06F5\u06F6\u06F7\u06F8\u06F9"[d]);
   }
   function getTier(points) {
@@ -14260,7 +14262,7 @@ window.storage = {
                 ] }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "bundle-badge", children: lang === "fa" ? window.t("bundleDisc") : "15% OFF" })
               ] }),
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { margin: "14px 18px 0", background: "linear-gradient(135deg,#4A3728,#C49A3A)", borderRadius: "16px", padding: "12px 14px", display: "flex", alignItems: "center", gap: "10px", color: "#FAF8F4" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "22px" }, children: "\u2728" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1 }, children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "10px", opacity: 0.75, fontWeight: 600 }, children: window.t("dailySpecial") }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "13px", fontWeight: 700 }, children: "\u0644\u0627\u062A\u0647 \u2014 \u0647\u0631 \u0631\u0648\u0632 \u0635\u0628\u062D \u06CC\u06A9 \u0646\u0641\u0631 \u0627\u0646\u062A\u062E\u0627\u0628 \u0645\u06CC\u200C\u0634\u0647" })] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { background: "rgba(255,255,255,0.2)", borderRadius: "999px", padding: "4px 12px", fontSize: "11px", fontWeight: 700, whiteSpace: "nowrap" }, children: "\u06F6\u06F5\u060C\u06F0\u06F0\u06F0 \u062A\u0648\u0645\u0627\u0646" })] }) }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { margin: "14px 18px 0", background: "linear-gradient(135deg,#4A3728,#C49A3A)", borderRadius: "16px", padding: "12px 14px", display: "flex", alignItems: "center", gap: "10px", color: "#FAF8F4" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "22px" }, children: "\u2728" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1 }, children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "10px", opacity: 0.75, fontWeight: 600 }, children: window.t("dailySpecial") }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "13px", fontWeight: 700 }, children: window.__LANG==="en"?"Latte — chosen for one person every morning":"\u0644\u0627\u062A\u0647 \u2014 \u0647\u0631 \u0631\u0648\u0632 \u0635\u0628\u062D \u06CC\u06A9 \u0646\u0641\u0631 \u0627\u0646\u062A\u062E\u0627\u0628 \u0645\u06CC\u200C\u0634\u0647" })] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { background: "rgba(255,255,255,0.2)", borderRadius: "999px", padding: "4px 12px", fontSize: "11px", fontWeight: 700, whiteSpace: "nowrap" }, children: window.__LANG==="en"?"65,000 T":"\u06F6\u06F5\u060C\u06F0\u06F0\u06F0 \u062A\u0648\u0645\u0627\u0646" })] }) }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "cat-bar", children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
                   "button",
@@ -14328,8 +14330,8 @@ window.storage = {
                       ] }),
                       pairItem && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "pair-line", children: [
                         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "11px" }, children: "\uD83C\uDF74" }),
-                        "\u062E\u0648\u0628 \u0645\u06CC\u0634\u0647 \u0628\u0627 ",
-                        pairItem.name
+                        window.t("pairWith") + " ",
+                        lang === "en" && pairItem.nameEn ? pairItem.nameEn : pairItem.name
                       ] })
                     ] }),
                     qty === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "add-btn", onClick: () => addToCart(item.id), "aria-label": "\u0627\u0641\u0632\u0648\u062F\u0646 " + item.name, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "22px", lineHeight: 1, fontWeight: 300 }, children: "+" }) }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "qty-stepper", children: [
@@ -14484,11 +14486,11 @@ window.storage = {
                 isBirthdayToday ? "\u062A\u0648\u0644\u062F\u062A \u0645\u0628\u0627\u0631\u06A9! \u0627\u0645\u0631\u0648\u0632 \u06F1\u06F5\u066A \u062A\u062E\u0641\u06CC\u0641 \u0648\u06CC\u0698\u0647\u200C\u06CC \u062A\u0648\u0644\u062F \u062A\u0648\u06CC \u0633\u0628\u062F \u062E\u0631\u06CC\u062F\u062A \u0641\u0639\u0627\u0644\u0647 \u{1F382}" : "\u062A\u0627\u0631\u06CC\u062E \u062A\u0648\u0644\u062F\u062A \u062B\u0628\u062A \u0634\u062F\u0647 \u2014 \u0631\u0648\u0632 \u062A\u0648\u0644\u062F\u062A \u06F1\u06F5\u066A \u062A\u062E\u0641\u06CC\u0641 \u0645\u06CC\u200C\u06AF\u06CC\u0631\u06CC"
               ] }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "info-card", children: [
-                "\u0647\u0631 \u06F2\u06F0\u06F0,\u06F0\u06F0\u06F0 \u062A\u0648\u0645\u0627\u0646 \u062E\u0631\u06CC\u062F = \u06F1 \u0627\u0645\u062A\u06CC\u0627\u0632 \u0628\u0627\u0634\u06AF\u0627\u0647 \u0645\u0634\u062A\u0631\u06CC\u0627\u0646",
+                window.__LANG==="en"?"Every 200,000T = 1 loyalty point":"\u0647\u0631 \u06F2\u06F0\u06F0,\u06F0\u06F0\u06F0 \u062A\u0648\u0645\u0627\u0646 \u062E\u0631\u06CC\u062F = \u06F1 \u0627\u0645\u062A\u06CC\u0627\u0632 \u0628\u0627\u0634\u06AF\u0627\u0647 \u0645\u0634\u062A\u0631\u06CC\u0627\u0646",
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-                "\u0647\u0631 \u0642\u0647\u0648\u0647\u200C\u0627\u06CC \u06A9\u0647 \u0633\u0641\u0627\u0631\u0634 \u0645\u06CC\u200C\u062F\u06CC\u060C \u06CC\u06A9 \u062F\u0627\u0646\u0647 \u0628\u0647 \u06A9\u0627\u0631\u062A\u062A \u0627\u0636\u0627\u0641\u0647 \u0645\u06CC\u200C\u0634\u0647. \u0628\u0627 \u06F8 \u062F\u0627\u0646\u0647\u060C \u06CC\u06A9 \u0642\u0647\u0648\u0647 \u0645\u0647\u0645\u0648\u0646 \u0645\u0627\u06CC\u06CC!",
+                window.__LANG==="en"?"Every coffee = 1 stamp. Collect 8 for a free coffee!":"\u0647\u0631 \u0642\u0647\u0648\u0647\u200C\u0627\u06CC \u06A9\u0647 \u0633\u0641\u0627\u0631\u0634 \u0645\u06CC\u200C\u062F\u06CC\u060C \u06CC\u06A9 \u062F\u0627\u0646\u0647 \u0628\u0647 \u06A9\u0627\u0631\u062A\u062A \u0627\u0636\u0627\u0641\u0647 \u0645\u06CC\u200C\u0634\u0647. \u0628\u0627 \u06F8 \u062F\u0627\u0646\u0647\u060C \u06CC\u06A9 \u0642\u0647\u0648\u0647 \u0645\u0647\u0645\u0648\u0646 \u0645\u0627\u06CC\u06CC!",
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-                "\u0633\u0641\u0627\u0631\u0634\u200C\u0647\u0627\u06CC \u06F5 \u0622\u06CC\u062A\u0645\u06CC \u0628\u0647 \u0628\u0627\u0644\u0627 \u06F5\u066A \u0648 \u0633\u0641\u0627\u0631\u0634\u200C\u0647\u0627\u06CC \u06F1\u06F0 \u0622\u06CC\u062A\u0645\u06CC \u0628\u0647 \u0628\u0627\u0644\u0627 \u06F1\u06F0\u066A \u062A\u062E\u0641\u06CC\u0641 \u06AF\u0631\u0648\u0647\u06CC \u0645\u06CC\u200C\u06AF\u06CC\u0631\u0646."
+                window.__LANG==="en"?"5+ items get 5% off, 10+ items get 10% off.":"\u0633\u0641\u0627\u0631\u0634\u200C\u0647\u0627\u06CC \u06F5 \u0622\u06CC\u062A\u0645\u06CC \u0628\u0647 \u0628\u0627\u0644\u0627 \u06F5\u066A \u0648 \u0633\u0641\u0627\u0631\u0634\u200C\u0647\u0627\u06CC \u06F1\u06F0 \u0622\u06CC\u062A\u0645\u06CC \u0628\u0647 \u0628\u0627\u0644\u0627 \u06F1\u06F0\u066A \u062A\u062E\u0641\u06CC\u0641 \u06AF\u0631\u0648\u0647\u06CC \u0645\u06CC\u200C\u06AF\u06CC\u0631\u0646."
               ] })
             ] }),
             activeTab === "reserve" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
@@ -14497,7 +14499,7 @@ window.storage = {
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "16px" }, children: "\uD83C\uDF81" }),
                   " \u0647\u062F\u06CC\u0647\u200C\u06CC \u0633\u0648\u0631\u067E\u0631\u0627\u06CC\u0632 \u0627\u0632 \u0637\u0631\u0641 \u0634\u0645\u0627"
                 ] }),
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 12, color: "var(--ink-soft)", textAlign: "center", margin: "8px 0" }, children: "\u0628\u0627 \u0627\u0633\u06A9\u0646 \u0645\u0646\u0648\u060C \u06CC\u0647 \u0634\u06CC\u0631\u06CC\u0646\u06CC \u0633\u0648\u0631\u067E\u0631\u0627\u06CC\u0632 \u0627\u0646\u062A\u062E\u0627\u0628 \u06A9\u0646\u06CC\u062F \u0648 \u0627\u0632 \u0637\u0631\u0641 \u0634\u0645\u0627 \u0628\u0647 \u062F\u0648\u0633\u062A\u062A\u0648\u0646 \u0647\u062F\u06CC\u0647 \u0628\u062F\u06CC\u0645 \u2014 \u06A9\u0627\u0641\u0647 \u062F\u0627\u0646\u0647 \u062D\u0633\u0627\u0628 \u0645\u06CC\u200C\u06A9\u0646\u0647!" }),
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 12, color: "var(--ink-soft)", textAlign: "center", margin: "8px 0" }, children: window.__LANG==="en"?"Pick a surprise treat — Cafe Daneh sends it as a gift from you!":"\u0628\u0627 \u0627\u0633\u06A9\u0646 \u0645\u0646\u0648\u060C \u06CC\u0647 \u0634\u06CC\u0631\u06CC\u0646\u06CC \u0633\u0648\u0631\u067E\u0631\u0627\u06CC\u0632 \u0627\u0646\u062A\u062E\u0627\u0628 \u06A9\u0646\u06CC\u062F \u0648 \u0627\u0632 \u0637\u0631\u0641 \u0634\u0645\u0627 \u0628\u0647 \u062F\u0648\u0633\u062A\u062A\u0648\u0646 \u0647\u062F\u06CC\u0647 \u0628\u062F\u06CC\u0645 \u2014 \u06A9\u0627\u0641\u0647 \u062F\u0627\u0646\u0647 \u062D\u0633\u0627\u0628 \u0645\u06CC\u200C\u06A9\u0646\u0647!" }),
                 giftSent ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { textAlign: "center", padding: "12px 0" }, children: [
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 28, marginBottom: 8 }, children: "\u{1F381}" }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontWeight: 700, fontSize: 13 }, children: window.t("giftSent") }),
@@ -14579,7 +14581,7 @@ window.storage = {
                         setReserveSubmitted(false);
                         setReserveForm({ date: "", time: "", people: "", occasion: "", note: "" });
                       },
-                      children: "\u0631\u0632\u0631\u0648 \u062C\u062F\u06CC\u062F"
+                      children: window.__LANG==="en"?"New reservation":"رزرو جدید"
                     }
                   )
                 ] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
@@ -14680,28 +14682,28 @@ window.storage = {
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { onClick: () => { if ("Notification" in window) { Notification.requestPermission().then(p => alert(p === "granted" ? "\u2705 \u067E\u0648\u0634 \u0646\u0648\u062A\u06CC\u0641 \u0641\u0639\u0627\u0644 \u0634\u062F!" : "\u274C \u0645\u062C\u0648\u0632 \u0631\u062F \u0634\u062F")); } }, style: { width: "100%", background: "var(--ink)", color: "var(--bg)", border: "none", borderRadius: "12px", padding: "10px", fontSize: "13px", fontWeight: 700, marginBottom: "14px", cursor: "pointer" }, children: ["\uD83D\uDD14 \u0641\u0639\u0627\u0644\u200C\u0633\u0627\u0632\u06CC \u067E\u0648\u0634 \u0646\u0648\u062A\u06CC\u0641\u06CC\u06A9\u06CC\u0634\u0646 \u0628\u0631\u0627\u06CC \u0645\u0634\u062A\u0631\u06CC\u0627\u0646"] }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dash-grid", children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dash-card", children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-label", children: "\u0633\u0641\u0627\u0631\u0634\u200C\u0647\u0627\u06CC \u0627\u0645\u0631\u0648\u0632" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-label", children: window.__LANG==="en"?"Today's orders":window.__LANG==="en"?"Today's orders":"سفارش‌های امروز" }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-value", children: toFa(orders.length) }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-sub", children: "\u0633\u0641\u0627\u0631\u0634 \u062B\u0628\u062A\u200C\u0634\u062F\u0647" })
                 ] }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dash-card", children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-label", children: "\u062F\u0631\u0622\u0645\u062F \u06A9\u0644" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-label", children: window.__LANG==="en"?"Total revenue":"درآمد کل" }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-value", style: { fontSize: "16px" }, children: formatToman(orders.reduce((s, o) => s + (o.total || 0), 0)) }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-sub", children: window.t("toman") })
                 ] }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dash-card", children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-label", children: "\u0645\u06CC\u0627\u0646\u06AF\u06CC\u0646 \u0633\u0641\u0627\u0631\u0634" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-label", children: window.__LANG==="en"?"Avg. order":window.__LANG==="en"?"Avg. order":"میانگین سفارش" }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-value", style: { fontSize: "16px" }, children: orders.length ? formatToman(Math.round(orders.reduce((s, o) => s + (o.total || 0), 0) / orders.length)) : "0" }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-sub", children: window.t("toman") })
                 ] }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dash-card", children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-label", children: "\u06A9\u0644 \u062A\u062E\u0641\u06CC\u0641" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-label", children: window.__LANG==="en"?"Total discount":window.__LANG==="en"?"Total discount":"کل تخفیف" }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-value", style: { fontSize: "16px" }, children: formatToman(orders.reduce((s, o) => s + (o.discount || 0), 0)) }),
                   /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dc-sub", children: window.t("toman") })
                 ] })
               ] }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dash-section", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dash-section-title", children: "\uD83D\uDCE6 \u0622\u062E\u0631\u06CC\u0646 \u0633\u0641\u0627\u0631\u0634\u200C\u0647\u0627" }),
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dash-section-title", children: window.__LANG==="en"?"📦 Recent orders":"📦 آخرین سفارش‌ها" }),
                 orders.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { color: "var(--ink-soft)", fontSize: "13px", padding: "20px 0", textAlign: "center" }, children: "\u0647\u0646\u0648\u0632 \u0633\u0641\u0627\u0631\u0634\u06CC \u062B\u0628\u062A \u0646\u0634\u062F\u0647" }) :
                 [...orders].reverse().slice(0, 5).map((o, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dash-order-row", children: [
                   /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dash-order-top", children: [
@@ -14712,13 +14714,13 @@ window.storage = {
                 ] }, i))
               ] }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dash-section", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dash-section-title", children: "\uD83C\uDF1F \u067E\u0631\u0641\u0631\u0648\u0634\u200C\u062A\u0631\u06CC\u0646 \u0622\u06CC\u062A\u0645\u200C\u0647\u0627" }),
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dash-section-title", children: window.__LANG==="en"?"🌟 Top items":"🌟 پرفروش‌ترین آیتم‌ها" }),
                 (() => {
                   const counts = {};
                   orders.forEach(o => (o.items || []).forEach(it => { counts[it.name] = (counts[it.name] || 0) + it.qty; }));
                   const sorted = Object.entries(counts).sort((a,b) => b[1]-a[1]).slice(0, 5);
                   const max = sorted[0]?.[1] || 1;
-                  return sorted.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { color: "var(--ink-soft)", fontSize: "13px", padding: "20px 0", textAlign: "center" }, children: "\u0647\u0646\u0648\u0632 \u062F\u0627\u062F\u0647\u200C\u0627\u06CC \u06A9\u0627\u0641\u06CC \u0646\u06CC\u0633\u062A" }) :
+                  return sorted.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { color: "var(--ink-soft)", fontSize: "13px", padding: "20px 0", textAlign: "center" }, children: window.__LANG==="en"?"Not enough data yet":window.__LANG==="en"?"Not enough data yet":"هنوز داده‌ای کافی نیست" }) :
                   sorted.map(([name, count], i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dash-bar", children: [
                     /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "dash-bar-label", children: name }),
                     /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dash-bar-track", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "dash-bar-fill", style: { width: Math.round(count/max*100) + "%" } }) }),
@@ -14745,7 +14747,7 @@ window.storage = {
                     "\u0633\u0641\u0627\u0631\u0634 ",
                     o.id
                   ] }),
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "order-status", children: "\u062B\u0628\u062A \u0634\u062F" })
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "order-status", children: window.__LANG==="en"?"Saved":"ثبت شد" })
                 ] }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "order-items", children: o.items.map((it, idx) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", justifyContent: "space-between", fontSize: "12px", padding: "3px 0", borderBottom: "1px solid var(--line)" }, children: [
                   /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [it.name, " × ", toFa(it.qty)] }),
@@ -14787,7 +14789,7 @@ window.storage = {
                   }
                 )
               ] }, o.id)),
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "reset-link", children: resetArmed ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: resetData, children: "\u0645\u0637\u0645\u0626\u0646\u06CC\u061F \u0628\u0631\u0627\u06CC \u067E\u0627\u06A9 \u06A9\u0631\u062F\u0646 \u06A9\u0627\u0645\u0644 \u062F\u0648\u0628\u0627\u0631\u0647 \u0628\u0632\u0646" }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => setResetArmed(true), children: "\u0628\u0627\u0632\u0646\u0634\u0627\u0646\u06CC \u062F\u0627\u062F\u0647\u200C\u0647\u0627\u06CC \u0645\u062D\u0644\u06CC" }) })
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "reset-link", children: resetArmed ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: resetData, children: "\u0645\u0637\u0645\u0626\u0646\u06CC\u061F \u0628\u0631\u0627\u06CC \u067E\u0627\u06A9 \u06A9\u0631\u062F\u0646 \u06A9\u0627\u0645\u0644 \u062F\u0648\u0628\u0627\u0631\u0647 \u0628\u0632\u0646" }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => setResetArmed(true), children: window.__LANG==="en"?"Reset local data":"\u0628\u0627\u0632\u0646\u0634\u0627\u0646\u06CC \u062F\u0627\u062F\u0647\u200C\u0647\u0627\u06CC \u0645\u062D\u0644\u06CC" }) })
             ] }) })
           ] }),
           surveyOpen && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "survey-overlay", onClick: () => setSurveyOpen(false), children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "survey-sheet", onClick: e => e.stopPropagation(), children: [
@@ -14800,7 +14802,7 @@ window.storage = {
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontWeight: 800, fontSize: "15px", textAlign: "center", marginBottom: "4px" }, children: "\u0633\u0641\u0627\u0631\u0634 \u062B\u0628\u062A \u0634\u062F! \uD83C\uDF89" }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { color: "var(--ink-soft)", fontSize: "12px", textAlign: "center" }, children: "\u0628\u0647 \u0633\u0641\u0627\u0631\u0634\u062A\u0648\u0646 \u0627\u0645\u062A\u06CC\u0627\u0632 \u0628\u062F\u06CC\u062F" }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "star-row", children: [1,2,3,4,5].map(s => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "star-btn", onClick: () => { setRatings(r => ({ ...r, [showRatingFor]: s })); setShowRatingFor(null); }, children: (ratings[showRatingFor] || 0) >= s ? "\u2B50" : "\u2606" }, s)) }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => setShowRatingFor(null), style: { width: "100%", padding: "10px", background: "var(--ink)", color: "var(--bg)", border: "none", borderRadius: "12px", fontSize: "13px", fontWeight: 700 }, children: "\u0628\u0639\u062F\u0627\u064B" })
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => setShowRatingFor(null), style: { width: "100%", padding: "10px", background: "var(--ink)", color: "var(--bg)", border: "none", borderRadius: "12px", fontSize: "13px", fontWeight: 700 }, children: window.__LANG==="en"?"Later":"بعداً" })
           ] }) }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", { className: "tab-bar", children: tabs.map((t) => {
             const Icon = t.icon;
@@ -14812,7 +14814,7 @@ window.storage = {
           }) }),
           accountOpen && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "sheet-overlay", onClick: () => setAccountOpen(false), children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "sheet", onClick: (e) => e.stopPropagation(), children: [
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "sheet-title", children: [
-              "\u062D\u0633\u0627\u0628 \u0645\u0646",
+              window.__LANG==="en"?"My Account":"\u062D\u0633\u0627\u0628 \u0645\u0646",
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => setAccountOpen(false), "aria-label": "\u0628\u0633\u062A\u0646", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "20px", lineHeight: 1 }, children: "\u00D7" }) })
             ] }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 12, padding: "6px 0 18px" }, children: [
@@ -14825,7 +14827,7 @@ window.storage = {
             user && user.referralCode && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "info-card", style: { margin: "0 0 14px" }, children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 6, fontWeight: 700, color: "var(--ink)", marginBottom: 4 }, children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "14px" }, children: "\uD83D\uDD17" }),
-                " \u06A9\u062F \u062F\u0639\u0648\u062A \u0634\u0645\u0627"
+                window.__LANG==="en"?" Your invite code":" \u06A9\u062F \u062F\u0639\u0648\u062A \u0634\u0645\u0627"
               ] }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 8, margin: "6px 0" }, children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontWeight: 800, fontSize: 15, letterSpacing: 1, color: "var(--ink)" }, children: user.referralCode }),
@@ -14845,13 +14847,13 @@ window.storage = {
                   }
                 )
               ] }),
-              "\u0627\u06CC\u0646 \u06A9\u062F \u0631\u0648 \u0628\u0647 \u062F\u0648\u0633\u062A\u0627\u062A \u0628\u062F\u0647 \u2014 \u0647\u0631\u06A9\u062F\u0648\u0645 \u0628\u0627\u0647\u0627\u0634 \u062B\u0628\u062A\u200C\u0646\u0627\u0645 \u06A9\u0646\u0646\u060C \u06F1\u06F0\u06F0 \u0627\u0645\u062A\u06CC\u0627\u0632 \u0647\u062F\u06CC\u0647 \u0645\u06CC\u200C\u06AF\u06CC\u0631\u0646 \u0648 \u062A\u0648 \u0647\u0645 \u06F1\u06F0\u06F0 \u0627\u0645\u062A\u06CC\u0627\u0632 \u067E\u0627\u062F\u0627\u0634 \u0645\u06CC\u200C\u06AF\u06CC\u0631\u06CC.",
+              window.__LANG==="en"?"Share this code — each friend gets 100 points, you get 100 too!":"\u0627\u06CC\u0646 \u06A9\u062F \u0631\u0648 \u0628\u0647 \u062F\u0648\u0633\u062A\u0627\u062A \u0628\u062F\u0647 \u2014 \u0647\u0631\u06A9\u062F\u0648\u0645 \u0628\u0627\u0647\u0627\u0634 \u062B\u0628\u062A\u200C\u0646\u0627\u0645 \u06A9\u0646\u0646\u060C \u06F1\u06F0\u06F0 \u0627\u0645\u062A\u06CC\u0627\u0632 \u0647\u062F\u06CC\u0647 \u0645\u06CC\u200C\u06AF\u06CC\u0631\u0646 \u0648 \u062A\u0648 \u0647\u0645 \u06F1\u06F0\u06F0 \u0627\u0645\u062A\u06CC\u0627\u0632 \u067E\u0627\u062F\u0627\u0634 \u0645\u06CC\u200C\u06AF\u06CC\u0631\u06CC.",
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { marginTop: 8, display: "flex", alignItems: "center", justifyContent: "space-between" }, children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
                   toFa(referralCount),
                   " \u0646\u0641\u0631 \u062A\u0627 \u0627\u0644\u0627\u0646 \u0628\u0627 \u06A9\u062F\u062A \u062B\u0628\u062A\u200C\u0646\u0627\u0645 \u06A9\u0631\u062F\u0646"
                 ] }),
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: claimReferralRewards, style: { background: "var(--ink)", color: "var(--bg)", border: "none", padding: "6px 12px", borderRadius: 999, fontSize: 11.5, fontWeight: 700 }, children: "\u062F\u0631\u06CC\u0627\u0641\u062A \u067E\u0627\u062F\u0627\u0634" })
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: claimReferralRewards, style: { background: "var(--ink)", color: "var(--bg)", border: "none", padding: "6px 12px", borderRadius: 999, fontSize: 11.5, fontWeight: 700 }, children: window.__LANG==="en"?"Claim reward":"\u062F\u0631\u06CC\u0627\u0641\u062A \u067E\u0627\u062F\u0627\u0634" })
               ] })
             ] }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { className: "account-link-row", onClick: () => {
@@ -14859,22 +14861,22 @@ window.storage = {
               setThemeSheetOpen(true);
             }, children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "17px" }, children: "\uD83C\uDFA8" }),
-              " \u0638\u0627\u0647\u0631 \u0627\u067E ",
+              window.__LANG==="en"?" App Theme ":" \u0638\u0627\u0647\u0631 \u0627\u067E ",
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "16px" }, children: "\u276F" })
             ] }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { className: "account-link-row", onClick: openAdmin, children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "17px" }, children: "\uD83C\uDFF7\uFE0F" }),
-              " \u062A\u0646\u0638\u06CC\u0645\u0627\u062A \u0642\u06CC\u0645\u062A\u200C\u0647\u0627 (\u0645\u062F\u06CC\u0631 \u0641\u0631\u0648\u0634\u06AF\u0627\u0647) ",
+              window.__LANG==="en"?" Price settings (Admin) ":" \u062A\u0646\u0638\u06CC\u0645\u0627\u062A \u0642\u06CC\u0645\u062A\u200C\u0647\u0627 (\u0645\u062F\u06CC\u0631 \u0641\u0631\u0648\u0634\u06AF\u0627\u0647) ",
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "16px" }, children: "\u276F" })
             ] }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { className: "checkout-btn", style: { width: "100%", margin: "18px 0 0", background: "var(--surface-2)", color: "var(--danger)" }, onClick: handleLogout, children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "15px", display: "inline", verticalAlign: "middle", marginLeft: 6 }, children: "\uD83D\uDEAA" }),
-              "\u062E\u0631\u0648\u062C \u0627\u0632 \u062D\u0633\u0627\u0628"
+              window.__LANG==="en"?"Sign out":"\u062E\u0631\u0648\u062C \u0627\u0632 \u062D\u0633\u0627\u0628"
             ] })
           ] }) }),
           themeSheetOpen && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "sheet-overlay", onClick: () => setThemeSheetOpen(false), children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "sheet", onClick: (e) => e.stopPropagation(), children: [
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "sheet-title", children: [
-              "\u0638\u0627\u0647\u0631 \u0627\u067E",
+              window.__LANG==="en"?"App Theme":"\u0638\u0627\u0647\u0631 \u0627\u067E",
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => setThemeSheetOpen(false), "aria-label": "\u0628\u0633\u062A\u0646", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "20px", lineHeight: 1 }, children: "\u00D7" }) })
             ] }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "theme-grid", children: THEMES.map((t) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { className: "theme-card" + (theme === t.id ? " active" : ""), onClick: () => selectTheme(t.id), children: [
@@ -14890,7 +14892,7 @@ window.storage = {
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 12, color: "var(--ink-soft)", marginBottom: 6 }, children: "\u06CC\u06A9\u06CC \u0627\u0632 \u0642\u0647\u0648\u0647\u200C\u0647\u0627 \u0631\u0648 \u0628\u0647\u200C\u0639\u0646\u0648\u0627\u0646 \u062C\u0627\u06CC\u0632\u0647\u200C\u06CC \u0631\u0627\u06CC\u06AF\u0627\u0646 \u0627\u0646\u062A\u062E\u0627\u0628 \u06A9\u0646" }),
             MENU.filter((m) => m.cat === "coffee").map((m) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "redeem-item-row", children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: 13, fontWeight: 600 }, children: m.name }),
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => confirmRedeem(m), children: "\u0627\u0646\u062A\u062E\u0627\u0628" })
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => confirmRedeem(m), children: window.__LANG==="en"?"Select":"انتخاب" })
             ] }, m.id)),
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { className: "checkout-btn", style: { width: "100%", margin: "16px 0 0", background: "var(--surface-2)", color: "var(--ink)" }, onClick: pickRandomReward, children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "15px", display: "inline", verticalAlign: "middle", marginLeft: 6 }, children: "\uD83C\uDFB2" }),
@@ -14905,7 +14907,7 @@ window.storage = {
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 12, color: "var(--ink-soft)", marginBottom: 6 }, children: "\u06CC\u06A9\u06CC \u0627\u0632 \u0634\u06CC\u0631\u06CC\u0646\u06CC\u200C\u0647\u0627 \u0631\u0648 \u0628\u0647\u200C\u0639\u0646\u0648\u0627\u0646 \u062C\u0627\u06CC\u0632\u0647\u200C\u06CC \u0631\u0627\u06CC\u06AF\u0627\u0646 \u0627\u0646\u062A\u062E\u0627\u0628 \u06A9\u0646" }),
             MENU.filter((m) => m.cat === "cake").map((m) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "redeem-item-row", children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: 13, fontWeight: 600 }, children: m.name }),
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => confirmChallengeRedeem(m), children: "\u0627\u0646\u062A\u062E\u0627\u0628" })
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => confirmChallengeRedeem(m), children: window.__LANG==="en"?"Select":"انتخاب" })
             ] }, m.id))
           ] }) }),
           adminOpen && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "sheet-overlay", onClick: () => setAdminOpen(false), children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "sheet", onClick: (e) => e.stopPropagation(), children: [
@@ -14917,7 +14919,7 @@ window.storage = {
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "28px" }, children: "\uD83D\uDD12" }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 12.5, color: "var(--ink-soft)" }, children: "\u0627\u06CC\u0646 \u0628\u062E\u0634 \u0645\u062E\u0635\u0648\u0635 \u0645\u062F\u06CC\u0631 \u0641\u0631\u0648\u0634\u06AF\u0627\u0647\u0647. PIN \u0631\u0648 \u0648\u0627\u0631\u062F \u06A9\u0646" }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", { className: "field-input", style: { textAlign: "center", maxWidth: 140 }, value: adminPinInput, onChange: (e) => setAdminPinInput(e.target.value), placeholder: "\u2022\u2022\u2022\u2022", inputMode: "numeric" }),
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-btn", style: { maxWidth: 200, marginTop: 8 }, onClick: unlockAdmin, children: "\u062A\u0623\u06CC\u06CC\u062F" })
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-btn", style: { maxWidth: 200, marginTop: 8 }, onClick: unlockAdmin, children: window.__LANG==="en"?"Confirm":"تأیید" })
             ] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
               MENU.map((m) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "admin-row", children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "ar-name", children: m.name }),
@@ -15040,8 +15042,8 @@ window.storage = {
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontWeight: 800, fontSize: 16 }, children: ONBOARD_STEPS[onboardStep].title }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: 12.5, color: "var(--ink-soft)", marginTop: 8, lineHeight: 1.8 }, children: ONBOARD_STEPS[onboardStep].desc }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "onboard-dots", children: ONBOARD_STEPS.map((_, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "onboard-dot" + (i === onboardStep ? " active" : "") }, i)) }),
-            onboardStep < ONBOARD_STEPS.length - 1 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-btn", style: { maxWidth: "100%", marginTop: 4 }, onClick: () => setOnboardStep((s) => s + 1), children: "\u0628\u0639\u062F\u06CC" }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-btn", style: { maxWidth: "100%", marginTop: 4 }, onClick: dismissOnboarding, children: window.t("welcomeBtn") }),
-            onboardStep < ONBOARD_STEPS.length - 1 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-link", onClick: dismissOnboarding, children: "\u0631\u062F \u0634\u062F\u0646" })
+            onboardStep < ONBOARD_STEPS.length - 1 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-btn", style: { maxWidth: "100%", marginTop: 4 }, onClick: () => setOnboardStep((s) => s + 1), children: window.__LANG==="en"?"Next":"بعدی" }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-btn", style: { maxWidth: "100%", marginTop: 4 }, onClick: dismissOnboarding, children: window.t("welcomeBtn") }),
+            onboardStep < ONBOARD_STEPS.length - 1 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "gate-link", onClick: dismissOnboarding, children: window.__LANG==="en"?"Dismiss":"رد شدن" })
           ] }) })
         ] })
       ] })
