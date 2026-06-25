@@ -72,8 +72,8 @@ html, body { margin: 0; padding: 0; background: #FAF8F4; height: 100%; overflow:
           .cat-chip, .sort-chip, .add-btn, .qty-btn, .tab-item, .fav-btn, .remove-btn {
             -webkit-tap-highlight-color: transparent;
           }
-          .add-btn { width: 38px; height: 38px; }
-          .qty-btn { width: 32px; height: 32px; }
+          .add-btn { width: 38px; height: 38px; border-radius: 10px !important; }
+          .qty-btn { width: 32px; height: 32px; border-radius: 8px !important; }
           .scroll-area {
             -webkit-overflow-scrolling: touch;
             overscroll-behavior-y: contain;
@@ -85,21 +85,35 @@ html, body { margin: 0; padding: 0; background: #FAF8F4; height: 100%; overflow:
           .menu-list { padding-bottom: 100px; }
         }
         .app-header {
-          padding: 18px 18px 12px; background: var(--bg); border-bottom: 1px solid var(--line);
+          padding: 18px 18px 14px;
+          background: linear-gradient(135deg, #2B2118 0%, #4A3728 50%, #3D2E22 100%);
+          border-bottom: none;
           flex-shrink: 0; display: flex; align-items: center; justify-content: space-between;
+          position: relative; overflow: hidden;
         }
+        .app-header::before {
+          content: '';
+          position: absolute; inset: 0;
+          background: radial-gradient(ellipse at 20% 50%, rgba(196,154,58,0.18) 0%, transparent 60%),
+                      radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.05) 0%, transparent 50%);
+          pointer-events: none;
+        }
+        .app-header .logo-row, .app-header .avatar-btn { position: relative; z-index: 1; }
         .logo-row { display: flex; align-items: center; gap: 10px; }
         .logo-mark {
-          width: 38px; height: 38px; border-radius: 50%; background: var(--surface-2);
+          width: 38px; height: 38px; border-radius: 50%;
+          background: rgba(255,255,255,0.12);
           display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-          border: 2px solid var(--accent-gold);
+          border: 2px solid rgba(196,154,58,0.8);
+          backdrop-filter: blur(4px);
         }
-        .brand-name { font-weight: 800; font-size: 19px; letter-spacing: -0.3px; }
-        .brand-tag { font-size: 11.5px; color: var(--ink-soft); margin-top: 1px; }
+        .brand-name { font-weight: 800; font-size: 19px; letter-spacing: -0.3px; color: #FAF8F4; }
+        .brand-tag { font-size: 11.5px; color: rgba(250,248,244,0.65); margin-top: 1px; }
         .avatar-btn {
-          width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line);
-          background: var(--ink); color: var(--bg); font-weight: 700; font-size: 13px;
+          width: 34px; height: 34px; border-radius: 50%; border: 2px solid rgba(196,154,58,0.7);
+          background: rgba(255,255,255,0.12); color: #FAF8F4; font-weight: 700; font-size: 13px;
           display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+          backdrop-filter: blur(4px);
         }
         .scroll-area { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; }
         .cat-bar { display: flex; gap: 8px; padding: 14px 18px 8px; overflow-x: auto; }
@@ -123,9 +137,9 @@ html, body { margin: 0; padding: 0; background: #FAF8F4; height: 100%; overflow:
           display: flex; align-items: flex-start; gap: 12px; background: var(--surface);
           border: 1px solid var(--line); border-radius: 18px; padding: 12px; position: relative;
         }
-        .fav-btn { position: absolute; top: 9px; right: 9px; background: rgba(255,255,255,0.85); border-radius: 50%; border: none; color: var(--ink-soft); padding: 4px; display: flex; box-shadow: 0 1px 4px rgba(0,0,0,0.15); z-index: 2; }
+        .fav-btn { position: absolute; top: 9px; right: 9px; background: rgba(255,255,255,0.9); border-radius: 8px; border: none; color: var(--ink-soft); padding: 5px 7px; display: flex; box-shadow: 0 1px 4px rgba(0,0,0,0.12); z-index: 2; transition: transform 0.15s ease; } .fav-btn:active { transform: scale(0.85); }
         .item-thumb {
-          width: 72px; height: 72px; border-radius: 16px; flex-shrink: 0;
+          width: 90px; height: 90px; border-radius: 16px; flex-shrink: 0;
           display: flex; align-items: center; justify-content: center;
           box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15);
           overflow: hidden;
@@ -135,8 +149,11 @@ html, body { margin: 0; padding: 0; background: #FAF8F4; height: 100%; overflow:
         .item-name-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
         .item-name { font-weight: 700; font-size: 14.5px; }
         .popular-badge {
-          display: inline-flex; align-items: center; gap: 2px; background: #FBF1DD; color: var(--accent-gold);
-          font-size: 9.5px; font-weight: 700; padding: 2px 6px; border-radius: 999px;
+          display: inline-flex; align-items: center; gap: 3px;
+          background: linear-gradient(135deg, #C49A3A, #E8BB5A);
+          color: #fff;
+          font-size: 9.5px; font-weight: 700; padding: 3px 8px; border-radius: 999px;
+          box-shadow: 0 1px 4px rgba(196,154,58,0.35);
         }
         .item-desc { font-size: 12px; color: var(--ink-soft); margin-top: 2px; line-height: 1.5; }
         .item-price { font-size: 13px; font-weight: 700; color: var(--accent-green); margin-top: 6px; }
@@ -145,14 +162,31 @@ html, body { margin: 0; padding: 0; background: #FAF8F4; height: 100%; overflow:
           background: var(--surface-2); padding: 4px 8px; border-radius: 8px; width: fit-content;
         }
         .add-btn {
-          background: var(--ink); color: var(--bg); border: none; width: 34px; height: 34px; border-radius: 50%;
+          background: var(--ink); color: var(--bg); border: none;
+          width: 36px; height: 36px; border-radius: 10px;
           display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+          transition: transform 0.15s ease, background 0.15s ease;
+          -webkit-tap-highlight-color: transparent;
         }
+        .add-btn:active {
+          transform: scale(0.82);
+          background: var(--accent-green);
+        }
+        @keyframes pop {
+          0% { transform: scale(1); }
+          40% { transform: scale(1.28); }
+          70% { transform: scale(0.92); }
+          100% { transform: scale(1); }
+        }
+        .add-btn.popped { animation: pop 0.32s ease forwards; }
         .qty-stepper { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
         .qty-btn {
-          width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface);
+          width: 30px; height: 30px; border-radius: 8px;
+          border: 1.5px solid var(--line); background: var(--surface);
           display: flex; align-items: center; justify-content: center; color: var(--ink);
+          font-size: 16px; font-weight: 400; transition: background 0.1s ease;
         }
+        .qty-btn:active { background: var(--surface-2); }
         .qty-num { font-weight: 700; font-size: 14px; min-width: 16px; text-align: center; }
         .empty-state { padding: 60px 30px; text-align: center; color: var(--ink-soft); }
         .empty-state .em-emoji { font-size: 38px; margin-bottom: 10px; }
@@ -196,10 +230,17 @@ html, body { margin: 0; padding: 0; background: #FAF8F4; height: 100%; overflow:
         .field-label { font-size: 12px; color: var(--ink-soft); margin: 12px 0 6px; display: flex; align-items: center; gap: 5px; }
         .field-input { width: 100%; border: 1.5px solid var(--line); border-radius: 12px; padding: 11px 12px; font-size: 13.5px; font-family: inherit; background: var(--surface); color: var(--ink); }
         .field-input:focus-visible { outline: 2px solid var(--accent-green); outline-offset: 1px; }
-        .tab-bar { display: flex; border-top: 1px solid var(--line); background: var(--surface); flex-shrink: 0; padding-bottom: env(safe-area-inset-bottom, 0); }
-        .tab-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 4px 8px; color: var(--ink-soft); position: relative; background: none; border: none; }
-        .tab-item.active { color: var(--ink); }
-        .tab-item .lbl { font-size: 10.5px; font-weight: 600; }
+        .tab-bar {
+          display: flex; border-top: none;
+          background: linear-gradient(180deg, #2B2118 0%, #1E1510 100%);
+          flex-shrink: 0; padding-bottom: env(safe-area-inset-bottom, 0);
+          box-shadow: 0 -1px 0 rgba(196,154,58,0.2);
+        }
+        .tab-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 4px 8px; color: rgba(250,248,244,0.4); position: relative; background: none; border: none; }
+        .tab-item.active { color: var(--accent-gold); }
+        .tab-item.active::before { content: ''; position: absolute; top: 0; right: 25%; left: 25%; height: 2px; background: var(--accent-gold); border-radius: 0 0 3px 3px; }
+        .tab-item .lbl { font-size: 10px; font-weight: 600; }
+        .tab-item.active .lbl { color: var(--accent-gold); }
         .tab-badge { position: absolute; top: 4px; right: 28%; background: var(--accent-gold); color: #fff; font-size: 9px; font-weight: 800; width: 16px; height: 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
         .loyalty-hero { margin: 16px 18px; background: var(--ink); color: var(--bg); border-radius: 20px; padding: 20px; text-align: center; }
         .tier-pill { display: inline-block; padding: 4px 14px; border-radius: 999px; font-size: 12px; font-weight: 700; margin-bottom: 10px; }
@@ -13598,6 +13639,15 @@ window.storage = {
         await window.storage.set(DATA_KEY, JSON.stringify({ orders: newOrders, loyalty: newLoyalty }), false);
       } catch (e) {
       }
+      // ارسال سفارش به واتساپ
+      try {
+        const itemLines = orderLineItems.map(it => it.qty + "x " + it.name + (it.price ? " (" + it.price.toLocaleString("fa-IR") + " تومان)" : " (رایگان)")).join("%0A");
+        const deliveryLine = deliveryType === "delivery" ? "%0Aآدرس: " + custAddress : "%0Aنوع: حضوری / تحویل در محل";
+        const discountLine = discountAmount > 0 ? "%0Aتخفیف: -" + discountAmount.toLocaleString("fa-IR") + " تومان" : "";
+        const scheduleLine = scheduleMode === "later" && scheduleTime ? "%0Aزمان تحویل: " + scheduleTime : "";
+        const msg = "🛎 سفارش جدید — کافه دانه%0A%0Aشماره: " + order.id + "%0Aنام: " + custName + "%0Aتلفن: " + custPhone + deliveryLine + scheduleLine + "%0A%0Aآیتم‌ها:%0A" + itemLines + discountLine + "%0A%0Aمبلغ کل: " + cartTotal.toLocaleString("fa-IR") + " تومان";
+        window.open("https://wa.me/989190130406?text=" + msg, "_blank");
+      } catch(e) {}
       if (weeklyJustCompleted) {
         showToast("\u{1F3C6} \u0686\u0627\u0644\u0634 \u0627\u06CC\u0646 \u0647\u0641\u062A\u0647 \u062A\u06A9\u0645\u06CC\u0644 \u0634\u062F! \u06CC\u0647 \u0634\u06CC\u0631\u06CC\u0646\u06CC \u0631\u0627\u06CC\u06AF\u0627\u0646 \u062F\u0627\u0631\u06CC");
       } else if (gotNewReward) {
@@ -13699,21 +13749,41 @@ window.storage = {
           overflow: hidden; display: flex; flex-direction: column; position: relative;
         }
         .app-header {
-          padding: 18px 18px 12px; background: var(--bg); border-bottom: 1px solid var(--line);
+          padding: 18px 18px 14px;
+          background: linear-gradient(135deg, #2B2118 0%, #4A3728 50%, #3D2E22 100%);
+          border-bottom: none;
           flex-shrink: 0; display: flex; align-items: center; justify-content: space-between;
+          position: relative; overflow: hidden;
         }
+        .app-header::before {
+          content: '';
+          position: absolute; inset: 0;
+          background: radial-gradient(ellipse at 20% 50%, rgba(196,154,58,0.18) 0%, transparent 60%),
+                      radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.05) 0%, transparent 50%);
+          pointer-events: none;
+        }
+        .app-header .logo-row, .app-header .avatar-btn, .app-header .theme-quick-btn { position: relative; z-index: 1; }
         .logo-row { display: flex; align-items: center; gap: 10px; }
         .logo-mark {
-          width: 38px; height: 38px; border-radius: 50%; background: var(--surface-2);
+          width: 38px; height: 38px; border-radius: 50%;
+          background: rgba(255,255,255,0.12);
           display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-          border: 2px solid var(--accent-gold);
+          border: 2px solid rgba(196,154,58,0.8);
         }
-        .brand-name { font-weight: 800; font-size: 19px; letter-spacing: -0.3px; }
-        .brand-tag { font-size: 11.5px; color: var(--ink-soft); margin-top: 1px; }
+        .brand-name { font-weight: 800; font-size: 19px; letter-spacing: -0.3px; color: #FAF8F4; }
+        .brand-tag { font-size: 11.5px; color: rgba(250,248,244,0.65); margin-top: 1px; }
         .avatar-btn {
-          width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line);
-          background: var(--ink); color: var(--bg); font-weight: 700; font-size: 13px;
+          width: 34px; height: 34px; border-radius: 50%;
+          border: 2px solid rgba(196,154,58,0.7);
+          background: rgba(255,255,255,0.12); color: #FAF8F4; font-weight: 700; font-size: 13px;
           display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+        }
+        .theme-quick-btn {
+          width: 30px; height: 30px; border-radius: 50%;
+          border: 1.5px solid rgba(196,154,58,0.6);
+          background: rgba(255,255,255,0.1); color: #FAF8F4;
+          display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+          font-size: 14px; margin-left: 6px;
         }
         .scroll-area { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; }
         .cat-bar { display: flex; gap: 8px; padding: 14px 18px 8px; overflow-x: auto; }
@@ -13737,9 +13807,9 @@ window.storage = {
           display: flex; align-items: flex-start; gap: 12px; background: var(--surface);
           border: 1px solid var(--line); border-radius: 18px; padding: 12px; position: relative;
         }
-        .fav-btn { position: absolute; top: 9px; right: 9px; background: rgba(255,255,255,0.85); border-radius: 50%; border: none; color: var(--ink-soft); padding: 4px; display: flex; box-shadow: 0 1px 4px rgba(0,0,0,0.15); z-index: 2; }
+        .fav-btn { position: absolute; top: 9px; right: 9px; background: rgba(255,255,255,0.9); border-radius: 8px; border: none; color: var(--ink-soft); padding: 5px 7px; display: flex; box-shadow: 0 1px 4px rgba(0,0,0,0.12); z-index: 2; transition: transform 0.15s ease; } .fav-btn:active { transform: scale(0.85); }
         .item-thumb {
-          width: 72px; height: 72px; border-radius: 16px; flex-shrink: 0;
+          width: 90px; height: 90px; border-radius: 16px; flex-shrink: 0;
           display: flex; align-items: center; justify-content: center;
           box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15);
           overflow: hidden;
@@ -13749,8 +13819,11 @@ window.storage = {
         .item-name-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
         .item-name { font-weight: 700; font-size: 14.5px; }
         .popular-badge {
-          display: inline-flex; align-items: center; gap: 2px; background: #FBF1DD; color: var(--accent-gold);
-          font-size: 9.5px; font-weight: 700; padding: 2px 6px; border-radius: 999px;
+          display: inline-flex; align-items: center; gap: 3px;
+          background: linear-gradient(135deg, #C49A3A, #E8BB5A);
+          color: #fff;
+          font-size: 9.5px; font-weight: 700; padding: 3px 8px; border-radius: 999px;
+          box-shadow: 0 1px 4px rgba(196,154,58,0.35);
         }
         .item-desc { font-size: 12px; color: var(--ink-soft); margin-top: 2px; line-height: 1.5; }
         .item-price { font-size: 13px; font-weight: 700; color: var(--accent-green); margin-top: 6px; }
@@ -13759,14 +13832,30 @@ window.storage = {
           background: var(--surface-2); padding: 4px 8px; border-radius: 8px; width: fit-content;
         }
         .add-btn {
-          background: var(--ink); color: var(--bg); border: none; width: 34px; height: 34px; border-radius: 50%;
+          background: var(--ink); color: var(--bg); border: none;
+          width: 36px; height: 36px; border-radius: 10px;
           display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+          transition: transform 0.15s ease, background 0.15s ease;
+          -webkit-tap-highlight-color: transparent;
+        }
+        .add-btn:active {
+          transform: scale(0.82);
+          background: var(--accent-green);
+        }
+        @keyframes pop {
+          0% { transform: scale(1); }
+          40% { transform: scale(1.28); }
+          70% { transform: scale(0.92); }
+          100% { transform: scale(1); }
         }
         .qty-stepper { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
         .qty-btn {
-          width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface);
+          width: 30px; height: 30px; border-radius: 8px;
+          border: 1.5px solid var(--line); background: var(--surface);
           display: flex; align-items: center; justify-content: center; color: var(--ink);
+          font-size: 16px; font-weight: 400; transition: background 0.1s ease;
         }
+        .qty-btn:active { background: var(--surface-2); }
         .qty-num { font-weight: 700; font-size: 14px; min-width: 16px; text-align: center; }
         .empty-state { padding: 60px 30px; text-align: center; color: var(--ink-soft); }
         .empty-state .em-emoji { font-size: 38px; margin-bottom: 10px; }
@@ -13810,10 +13899,17 @@ window.storage = {
         .field-label { font-size: 12px; color: var(--ink-soft); margin: 12px 0 6px; display: flex; align-items: center; gap: 5px; }
         .field-input { width: 100%; border: 1.5px solid var(--line); border-radius: 12px; padding: 11px 12px; font-size: 13.5px; font-family: inherit; background: var(--surface); color: var(--ink); }
         .field-input:focus-visible { outline: 2px solid var(--accent-green); outline-offset: 1px; }
-        .tab-bar { display: flex; border-top: 1px solid var(--line); background: var(--surface); flex-shrink: 0; padding-bottom: env(safe-area-inset-bottom, 0); }
-        .tab-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 4px 8px; color: var(--ink-soft); position: relative; background: none; border: none; }
-        .tab-item.active { color: var(--ink); }
-        .tab-item .lbl { font-size: 10.5px; font-weight: 600; }
+        .tab-bar {
+          display: flex; border-top: none;
+          background: linear-gradient(180deg, #2B2118 0%, #1E1510 100%);
+          flex-shrink: 0; padding-bottom: env(safe-area-inset-bottom, 0);
+          box-shadow: 0 -1px 0 rgba(196,154,58,0.2);
+        }
+        .tab-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 4px 8px; color: rgba(250,248,244,0.4); position: relative; background: none; border: none; }
+        .tab-item.active { color: var(--accent-gold); }
+        .tab-item.active::before { content: ''; position: absolute; top: 0; right: 25%; left: 25%; height: 2px; background: var(--accent-gold); border-radius: 0 0 3px 3px; }
+        .tab-item .lbl { font-size: 10px; font-weight: 600; }
+        .tab-item.active .lbl { color: var(--accent-gold); }
         .tab-badge { position: absolute; top: 4px; right: 28%; background: var(--accent-gold); color: #fff; font-size: 9px; font-weight: 800; width: 16px; height: 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
         .loyalty-hero { margin: 16px 18px; background: var(--ink); color: var(--bg); border-radius: 20px; padding: 20px; text-align: center; }
         .tier-pill { display: inline-block; padding: 4px 14px; border-radius: 999px; font-size: 12px; font-weight: 700; margin-bottom: 10px; }
@@ -13902,10 +13998,12 @@ window.storage = {
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "brand-tag", children: "\u0628\u0631\u0634\u062A\u0647\u200C\u06A9\u0627\u0631\u06CC \u062A\u0627\u0632\u0647\u060C \u0647\u0631 \u0631\u0648\u0632" })
               ] })
             ] }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "theme-quick-btn", onClick: () => { const ids = THEMES.map(t=>t.id); const cur = ids.indexOf(theme); setTheme(ids[(cur+1)%ids.length]); }, "aria-label": "\u062A\u063A\u06CC\u06CC\u0631 \u067E\u0648\u0633\u062A\u0647", children: "\u{1F3A8}" }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "avatar-btn", onClick: openAccount, "aria-label": "\u062D\u0633\u0627\u0628 \u06A9\u0627\u0631\u0628\u0631\u06CC", children: user && user.name ? user.name.trim().charAt(0) : "\u0645" })
           ] }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "scroll-area", children: [
             activeTab === "menu" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { margin: "14px 18px 0", background: "linear-gradient(135deg,#4A3728,#C49A3A)", borderRadius: "16px", padding: "12px 14px", display: "flex", alignItems: "center", gap: "10px", color: "#FAF8F4" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "22px" }, children: "\u2728" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { flex: 1 }, children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "10px", opacity: 0.75, fontWeight: 600 }, children: "\u067E\u06CC\u0634\u0646\u0647\u0627\u062F \u0631\u0648\u0632" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { fontSize: "13px", fontWeight: 700 }, children: "\u0644\u0627\u062A\u0647 \u2014 \u0647\u0631 \u0631\u0648\u0632 \u0635\u0628\u062D \u06CC\u06A9 \u0646\u0641\u0631 \u0627\u0646\u062A\u062E\u0627\u0628 \u0645\u06CC\u200C\u0634\u0647" })] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: { background: "rgba(255,255,255,0.2)", borderRadius: "999px", padding: "4px 12px", fontSize: "11px", fontWeight: 700, whiteSpace: "nowrap" }, children: "\u06F6\u06F5\u060C\u06F0\u06F0\u06F0 \u062A\u0648\u0645\u0627\u0646" })] }) }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "cat-bar", children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
                   "button",
@@ -14377,7 +14475,7 @@ window.storage = {
             const Icon = t.icon;
             return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { className: "tab-item" + (activeTab === t.id ? " active" : ""), onClick: () => setActiveTab(t.id), children: [
               t.badge > 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "tab-badge", children: toFa(t.badge) }),
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { size: 20 }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { size: 22, strokeWidth: activeTab === t.id ? 2.5 : 1.5 }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "lbl", children: t.label })
             ] }, t.id);
           }) }),
