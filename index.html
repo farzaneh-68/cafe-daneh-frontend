@@ -167,6 +167,7 @@ html, body { margin: 0; padding: 0; background: #FAF8F4; height: 100%; overflow:
           display: flex; align-items: center; justify-content: center; flex-shrink: 0;
           transition: transform 0.15s ease, background 0.15s ease;
           -webkit-tap-highlight-color: transparent;
+          font-size: 22px; line-height: 1; font-weight: 300;
         }
         .add-btn:active {
           transform: scale(0.82);
@@ -184,7 +185,8 @@ html, body { margin: 0; padding: 0; background: #FAF8F4; height: 100%; overflow:
           width: 30px; height: 30px; border-radius: 8px;
           border: 1.5px solid var(--line); background: var(--surface);
           display: flex; align-items: center; justify-content: center; color: var(--ink);
-          font-size: 16px; font-weight: 400; transition: background 0.1s ease;
+          font-size: 18px; font-weight: 400; transition: background 0.1s ease;
+          line-height: 1;
         }
         .qty-btn:active { background: var(--surface-2); }
         .qty-num { font-weight: 700; font-size: 14px; min-width: 16px; text-align: center; }
@@ -13159,10 +13161,10 @@ window.storage = {
     { id: "cdb", cat: "cold", name: "\u06A9\u0644\u062F\u0628\u0631\u0648", desc: "\u062F\u0645 \u0633\u0631\u062F \u06F1\u06F8 \u0633\u0627\u0639\u062A\u0647\u060C \u0645\u0644\u0627\u06CC\u0645 \u0648 \u06A9\u0645\u200C\u0627\u0633\u06CC\u062F\u06CC", price: 72e3, pair: "cro", popular: true }
   ];
   var CATEGORIES = [
-    { id: "coffee", label: "\u0642\u0647\u0648\u0647", icon: import_lucide_react.Coffee },
-    { id: "tea", label: "\u0686\u0627\u06CC \u0648 \u062F\u0645\u0646\u0648\u0634", icon: import_lucide_react.Leaf },
-    { id: "cake", label: "\u06A9\u06CC\u06A9 \u0648 \u0634\u06CC\u0631\u06CC\u0646\u06CC", icon: import_lucide_react.Sparkles },
-    { id: "cold", label: "\u0646\u0648\u0634\u06CC\u062F\u0646\u06CC \u0633\u0631\u062F", icon: import_lucide_react.Snowflake }
+    { id: "coffee", label: "\u0642\u0647\u0648\u0647", icon: import_lucide_react.Coffee, emoji: "\u2615" },
+    { id: "tea", label: "\u0686\u0627\u06CC \u0648 \u062F\u0645\u0646\u0648\u0634", icon: import_lucide_react.Leaf, emoji: "\uD83C\uDF3F" },
+    { id: "cake", label: "\u06A9\u06CC\u06A9 \u0648 \u0634\u06CC\u0631\u06CC\u0646\u06CC", icon: import_lucide_react.Sparkles, emoji: "\uD83C\uDF70" },
+    { id: "cold", label: "\u0646\u0648\u0634\u06CC\u062F\u0646\u06CC \u0633\u0631\u062F", icon: import_lucide_react.Snowflake, emoji: "\u2744\uFE0F" }
   ];
   var CAT_STYLE = {
     coffee: { grad: "linear-gradient(135deg,#6F4E37,#3B2A1E)", fg: "#F3E9DD" },
@@ -13696,11 +13698,11 @@ window.storage = {
     const canSubmit = custName.trim() && custPhone.trim() && (deliveryType === "pickup" || custAddress.trim() && subtotal >= MIN_DELIVERY_AMOUNT) && (scheduleMode === "now" || scheduleTime);
     const canLogin = loginName.trim() && loginPhone.trim();
     const tabs = [
-      { id: "menu", label: "\u0645\u0646\u0648", icon: import_lucide_react.Coffee },
-      { id: "cart", label: "\u0633\u0628\u062F", icon: import_lucide_react.ShoppingBag, badge: cartCount },
-      { id: "loyalty", label: "\u0628\u0627\u0634\u06AF\u0627\u0647", icon: import_lucide_react.Award },
-      { id: "reserve", label: "\u0631\u0632\u0631\u0648", icon: import_lucide_react.Calendar },
-      { id: "orders", label: "\u0633\u0641\u0627\u0631\u0634\u200C\u0647\u0627", icon: import_lucide_react.ClipboardList }
+      { id: "menu", label: "\u0645\u0646\u0648", icon: import_lucide_react.Coffee, emoji: "\u2615" },
+      { id: "cart", label: "\u0633\u0628\u062F", icon: import_lucide_react.ShoppingBag, badge: cartCount, emoji: "\uD83D\uDED2" },
+      { id: "loyalty", label: "\u0628\u0627\u0634\u06AF\u0627\u0647", icon: import_lucide_react.Award, emoji: "\uD83C\uDFC6" },
+      { id: "reserve", label: "\u0631\u0632\u0631\u0648", icon: import_lucide_react.Calendar, emoji: "\uD83D\uDCC5" },
+      { id: "orders", label: "\u0633\u0641\u0627\u0631\u0634\u200C\u0647\u0627", icon: import_lucide_react.ClipboardList, emoji: "\uD83D\uDCCB" }
     ];
     const ONBOARD_STEPS = [
       { icon: import_lucide_react.Award, title: "\u0628\u0627\u0634\u06AF\u0627\u0647 \u0645\u0634\u062A\u0631\u06CC\u0627\u0646 \u062F\u0627\u0646\u0647", desc: "\u0647\u0631 \u0633\u0641\u0627\u0631\u0634 \u0628\u0647\u062A \u0627\u0645\u062A\u06CC\u0627\u0632 \u0648 \u062F\u0648\u0646\u0647 \u0645\u06CC\u200C\u062F\u0647. \u0628\u0627 \u06F8 \u062F\u0648\u0646\u0647 \u0642\u0647\u0648\u0647\u060C \u06CC\u0647 \u0642\u0647\u0648\u0647\u200C\u06CC \u0631\u0627\u06CC\u06AF\u0627\u0646 \u0645\u06CC\u200C\u06AF\u06CC\u0631\u06CC!" },
@@ -13839,6 +13841,7 @@ window.storage = {
           display: flex; align-items: center; justify-content: center; flex-shrink: 0;
           transition: transform 0.15s ease, background 0.15s ease;
           -webkit-tap-highlight-color: transparent;
+          font-size: 22px; line-height: 1; font-weight: 300;
         }
         .add-btn:active {
           transform: scale(0.82);
@@ -13855,7 +13858,8 @@ window.storage = {
           width: 30px; height: 30px; border-radius: 8px;
           border: 1.5px solid var(--line); background: var(--surface);
           display: flex; align-items: center; justify-content: center; color: var(--ink);
-          font-size: 16px; font-weight: 400; transition: background 0.1s ease;
+          font-size: 18px; font-weight: 400; transition: background 0.1s ease;
+          line-height: 1;
         }
         .qty-btn:active { background: var(--surface-2); }
         .qty-num { font-weight: 700; font-size: 14px; min-width: 16px; text-align: center; }
@@ -14015,7 +14019,7 @@ window.storage = {
                     className: "cat-chip fav-chip" + (showFavoritesOnly ? " active" : ""),
                     onClick: () => setShowFavoritesOnly((v) => !v),
                     children: [
-                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_lucide_react.Heart, { size: 14, fill: showFavoritesOnly ? "#fff" : "none" }),
+                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "13px" }, children: showFavoritesOnly ? "\u2665" : "\u2661" }),
                       "\u0639\u0644\u0627\u0642\u0647\u200C\u0645\u0646\u062F\u06CC\u200C\u0647\u0627"
                     ]
                   }
@@ -14031,7 +14035,7 @@ window.storage = {
                         setActiveCat(c.id);
                       },
                       children: [
-                        /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { size: 14 }),
+                        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "13px" }, children: c.emoji }),
                         c.label
                       ]
                     },
@@ -14061,7 +14065,7 @@ window.storage = {
                   const price = priceOf(item);
                   const isFav = !!favorites[item.id];
                   return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "menu-card", children: [
-                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "fav-btn", onClick: () => toggleFavorite(item.id), "aria-label": "\u0639\u0644\u0627\u0642\u0647\u200C\u0645\u0646\u062F\u06CC", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_lucide_react.Heart, { size: 17, fill: isFav ? "var(--danger)" : "none", color: isFav ? "var(--danger)" : "var(--ink-soft)" }) }),
+                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "fav-btn", onClick: () => toggleFavorite(item.id), "aria-label": "\u0639\u0644\u0627\u0642\u0647\u200C\u0645\u0646\u062F\u06CC", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "16px", lineHeight: 1, color: isFav ? "var(--danger)" : "var(--ink-soft)" }, children: isFav ? "\u2665" : "\u2661" }) }),
                     /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "item-thumb", style: PHOTOS[item.id] ? void 0 : { background: style.grad }, children: PHOTOS[item.id] ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", { src: PHOTOS[item.id], alt: item.name, className: "item-thumb-img" }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CatIcon, { size: 24, color: style.fg }) }),
                     /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "item-body", children: [
                       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "item-name-row", children: [
@@ -14082,10 +14086,10 @@ window.storage = {
                         pairItem.name
                       ] })
                     ] }),
-                    qty === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "add-btn", onClick: () => addToCart(item.id), "aria-label": "\u0627\u0641\u0632\u0648\u062F\u0646 " + item.name, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_lucide_react.Plus, { size: 16 }) }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "qty-stepper", children: [
-                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "qty-btn", onClick: () => decFromCart(item.id), "aria-label": "\u06A9\u0645 \u06A9\u0631\u062F\u0646", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_lucide_react.Minus, { size: 13 }) }),
+                    qty === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "add-btn", onClick: () => addToCart(item.id), "aria-label": "\u0627\u0641\u0632\u0648\u062F\u0646 " + item.name, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "22px", lineHeight: 1, fontWeight: 300 }, children: "+" }) }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "qty-stepper", children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "qty-btn", onClick: () => decFromCart(item.id), "aria-label": "\u06A9\u0645 \u06A9\u0631\u062F\u0646", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "18px", lineHeight: 1, fontWeight: 400 }, children: "\u2212" }) }),
                       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "qty-num", children: toFa(qty) }),
-                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "qty-btn", onClick: () => addToCart(item.id), "aria-label": "\u0632\u06CC\u0627\u062F \u06A9\u0631\u062F\u0646", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_lucide_react.Plus, { size: 13 }) })
+                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "qty-btn", onClick: () => addToCart(item.id), "aria-label": "\u0632\u06CC\u0627\u062F \u06A9\u0631\u062F\u0646", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "18px", lineHeight: 1, fontWeight: 400 }, children: "+" }) })
                     ] })
                   ] }, item.id);
                 })
@@ -14479,7 +14483,7 @@ window.storage = {
             const Icon = t.icon;
             return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { className: "tab-item" + (activeTab === t.id ? " active" : ""), onClick: () => setActiveTab(t.id), children: [
               t.badge > 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "tab-badge", children: toFa(t.badge) }),
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { size: 22, strokeWidth: activeTab === t.id ? 2.5 : 1.5 }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { style: { fontSize: "20px", lineHeight: 1 }, children: t.emoji }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "lbl", children: t.label })
             ] }, t.id);
           }) }),
