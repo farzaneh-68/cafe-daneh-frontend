@@ -179,7 +179,7 @@ html, body { margin: 0; padding: 0; background: #FAF8F4; height: 100%; overflow:
           100% { transform: scale(1); }
         }
         .add-btn.popped { animation: pop 0.32s ease forwards; }
-        .qty-stepper { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+        .qty-stepper { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
         .qty-btn {
           width: 30px; height: 30px; border-radius: 8px;
           border: 1.5px solid var(--line); background: var(--surface);
@@ -236,11 +236,13 @@ html, body { margin: 0; padding: 0; background: #FAF8F4; height: 100%; overflow:
           flex-shrink: 0; padding-bottom: env(safe-area-inset-bottom, 0);
           box-shadow: 0 -1px 0 rgba(196,154,58,0.2);
         }
-        .tab-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 4px 8px; color: rgba(250,248,244,0.4); position: relative; background: none; border: none; }
-        .tab-item.active { color: var(--accent-gold); }
-        .tab-item.active::before { content: ''; position: absolute; top: 0; right: 25%; left: 25%; height: 2px; background: var(--accent-gold); border-radius: 0 0 3px 3px; }
+        .tab-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 4px 8px; color: rgba(250,248,244,0.55); position: relative; background: none; border: none; }
+        .tab-item svg { color: rgba(250,248,244,0.55); stroke: rgba(250,248,244,0.55); }
+        .tab-item.active { color: #C49A3A; }
+        .tab-item.active svg { color: #C49A3A; stroke: #C49A3A; }
+        .tab-item.active::before { content: ''; position: absolute; top: 0; right: 25%; left: 25%; height: 2px; background: #C49A3A; border-radius: 0 0 3px 3px; }
         .tab-item .lbl { font-size: 10px; font-weight: 600; }
-        .tab-item.active .lbl { color: var(--accent-gold); }
+        .tab-item.active .lbl { color: #C49A3A; }
         .tab-badge { position: absolute; top: 4px; right: 28%; background: var(--accent-gold); color: #fff; font-size: 9px; font-weight: 800; width: 16px; height: 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
         .loyalty-hero { margin: 16px 18px; background: var(--ink); color: var(--bg); border-radius: 20px; padding: 20px; text-align: center; }
         .tier-pill { display: inline-block; padding: 4px 14px; border-radius: 999px; font-size: 12px; font-weight: 700; margin-bottom: 10px; }
@@ -13848,7 +13850,7 @@ window.storage = {
           70% { transform: scale(0.92); }
           100% { transform: scale(1); }
         }
-        .qty-stepper { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+        .qty-stepper { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
         .qty-btn {
           width: 30px; height: 30px; border-radius: 8px;
           border: 1.5px solid var(--line); background: var(--surface);
@@ -13905,11 +13907,13 @@ window.storage = {
           flex-shrink: 0; padding-bottom: env(safe-area-inset-bottom, 0);
           box-shadow: 0 -1px 0 rgba(196,154,58,0.2);
         }
-        .tab-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 4px 8px; color: rgba(250,248,244,0.4); position: relative; background: none; border: none; }
-        .tab-item.active { color: var(--accent-gold); }
-        .tab-item.active::before { content: ''; position: absolute; top: 0; right: 25%; left: 25%; height: 2px; background: var(--accent-gold); border-radius: 0 0 3px 3px; }
+        .tab-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 4px 8px; color: rgba(250,248,244,0.55); position: relative; background: none; border: none; }
+        .tab-item svg { color: rgba(250,248,244,0.55); stroke: rgba(250,248,244,0.55); }
+        .tab-item.active { color: #C49A3A; }
+        .tab-item.active svg { color: #C49A3A; stroke: #C49A3A; }
+        .tab-item.active::before { content: ''; position: absolute; top: 0; right: 25%; left: 25%; height: 2px; background: #C49A3A; border-radius: 0 0 3px 3px; }
         .tab-item .lbl { font-size: 10px; font-weight: 600; }
-        .tab-item.active .lbl { color: var(--accent-gold); }
+        .tab-item.active .lbl { color: #C49A3A; }
         .tab-badge { position: absolute; top: 4px; right: 28%; background: var(--accent-gold); color: #fff; font-size: 9px; font-weight: 800; width: 16px; height: 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
         .loyalty-hero { margin: 16px 18px; background: var(--ink); color: var(--bg); border-radius: 20px; padding: 20px; text-align: center; }
         .tier-pill { display: inline-block; padding: 4px 14px; border-radius: 999px; font-size: 12px; font-weight: 700; margin-bottom: 10px; }
